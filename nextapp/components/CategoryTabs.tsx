@@ -34,7 +34,7 @@ export const CategoryTabs: React.FC<CategoryTabsProps> = ({
   ];
 
   return (
-    <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+    <div className="flex items-center gap-2.5 overflow-x-auto pb-3 pt-1 scrollbar-none">
       {categories.map((cat) => {
         const isActive = activeCategory === cat.id;
         const count = categoryCounts[cat.id] || 0;
@@ -43,18 +43,18 @@ export const CategoryTabs: React.FC<CategoryTabsProps> = ({
           <button
             key={cat.id}
             onClick={() => onSelectCategory(cat.id)}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all border ${
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold whitespace-nowrap transition-all border ${
               isActive
-                ? 'bg-[#032417] text-white border-[#032417] shadow-sm shadow-emerald-950/20'
-                : 'bg-white text-[#56685f] border-[#d6e3db] hover:border-[#032417] hover:text-[#032417]'
+                ? 'bg-[#2f542c] text-white border-[#2f542c] shadow-apple-pill'
+                : 'bg-white text-[#536b51] border-[#e1ebda] hover:border-[#2f542c] hover:text-[#244026] shadow-apple'
             }`}
           >
-            <span className={isActive ? 'text-[#25b967]' : 'text-gray-400'}>
+            <span className={isActive ? 'text-[#a2d897]' : 'text-[#7d967a]'}>
               {cat.icon}
             </span>
             <span>{cat.label}</span>
-            <span className={`px-2 py-0.5 rounded-full text-[10px] ${
-              isActive ? 'bg-white/20 text-white' : 'bg-[#eaf1ed] text-[#032417]'
+            <span className={`px-2 py-0.5 rounded-full text-[10px] font-black ${
+              isActive ? 'bg-white/20 text-white' : 'bg-[#eef4ea] text-[#244026]'
             }`}>
               {count}
             </span>

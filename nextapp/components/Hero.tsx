@@ -8,11 +8,12 @@ import {
   CheckCircle2, 
   ArrowRight, 
   MessageCircle, 
-  FileSpreadsheet,
   Building2,
   Percent,
   Warehouse,
-  Sparkles
+  Sparkles,
+  Search,
+  MapPin
 } from 'lucide-react';
 
 interface HeroProps {
@@ -27,140 +28,147 @@ export const Hero: React.FC<HeroProps> = ({
   onScrollToCatalog 
 }) => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#eaf2ed]/90 via-white to-white py-14 lg:py-20 border-b border-[#dde8e1]">
-      {/* Decorative ambient background glows */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-10 w-80 h-80 bg-amber-200/30 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative overflow-hidden py-10 lg:py-16">
+      
+      {/* Organic Nature Backdrop Curves */}
+      <div className="absolute top-0 inset-x-0 h-96 bg-gradient-to-b from-[#e3eed9]/70 via-[#eff5eb]/40 to-transparent pointer-events-none -z-10" />
+      <div className="absolute top-10 right-10 w-96 h-96 bg-[#dbe8d2]/60 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-40 left-10 w-80 h-80 bg-[#eef4e8] rounded-full blur-3xl pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
+        
+        {/* Main Grid: Left Value Proposition & Right Bento Card */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
-          {/* Main Hero Value Proposition */}
+          {/* Main Hero Copywriting */}
           <div className="lg:col-span-7 space-y-6">
             
-            {/* Tagline Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c7ebd5] border border-emerald-300 text-[#032417] text-xs font-bold shadow-xs">
-              <Sparkles className="w-3.5 h-3.5 text-emerald-800" />
+            {/* Tagline Badge - Apple Pill Style */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e3eed9] border border-[#cde0c2] text-[#244026] text-xs font-bold shadow-apple-pill">
+              <Sparkles className="w-3.5 h-3.5 text-[#2f542c]" />
               <span>PT IHSAN ABDUL PATAH • Distributor Resmi SNI</span>
             </div>
 
             {/* Core Persuasive Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#032417] tracking-tight leading-[1.18]">
-              Pusat Material SNI & Bor Sumur. Harga Pabrik, Siap Antar.
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1b3319] tracking-tight leading-[1.18]">
+              Pusat Material SNI &amp; Bor Sumur. Harga Pabrik, Siap Antar.
             </h1>
 
             {/* Sub-headline / Elevator Pitch */}
-            <p className="text-base sm:text-lg text-[#56685f] leading-relaxed max-w-2xl font-medium">
+            <p className="text-base sm:text-lg text-[#536b51] leading-relaxed max-w-2xl font-medium">
               Sedia Besi Beton, Semen, Pasir Truk, hingga Jasa Sumur Bor. Beli eceran murah, beli borongan langsung potong harga!
             </p>
 
-            {/* Action Call to Action Buttons */}
+            {/* Action Call to Action Buttons - Apple Pill Style */}
             <div className="flex flex-wrap items-center gap-3.5 pt-2">
               <button
                 onClick={onScrollToCatalog}
-                className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#032417] text-white hover:bg-[#164e33] text-sm font-extrabold shadow-lg shadow-emerald-950/20 transition-all transform active:scale-95"
+                className="flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2f542c] text-white hover:bg-[#233f21] text-xs sm:text-sm font-bold shadow-apple-pill hover:shadow-apple-floating transition-all transform active:scale-95"
               >
-                <span>Cek Harga & Pesan</span>
-                <ArrowRight className="w-4 h-4 text-[#25b967]" />
+                <span>Cek Harga &amp; Pesan</span>
+                <ArrowRight className="w-4 h-4 text-[#83c076]" />
               </button>
 
               <a
                 href={COMPANY_INFO.whatsapp1}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-3.5 rounded-xl bg-[#25D366] text-white hover:bg-[#20ba5a] text-sm font-bold shadow-md transition-all transform active:scale-95"
+                className="flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-[#244026] hover:bg-[#f4f7f0] border border-[#d7e5ce] text-xs sm:text-sm font-bold shadow-apple hover:shadow-apple-hover transition-all transform active:scale-95"
               >
-                <MessageCircle className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4 text-[#2f542c]" />
                 <span>Nego Harga Proyek (WA)</span>
               </a>
 
               <button
                 onClick={onOpenProfile}
-                className="flex items-center gap-2 px-4 py-3.5 rounded-xl bg-white text-[#032417] hover:bg-[#f0f5f2] border border-[#cfdfd6] text-sm font-bold shadow-xs transition-all hover:border-[#032417]"
+                className="flex items-center gap-2 px-5 py-3.5 rounded-full bg-white/80 text-[#3b5938] hover:bg-white border border-[#e1ebda] text-xs sm:text-sm font-semibold shadow-xs transition-all hover:border-[#2f542c]"
               >
-                <Building2 className="w-4 h-4 text-emerald-700" />
+                <Building2 className="w-4 h-4 text-[#2f542c]" />
                 <span>Profil Resmi PT</span>
               </button>
             </div>
 
             {/* Trust Pillars */}
-            <div className="pt-3 flex flex-wrap items-center gap-4 text-xs font-semibold text-[#032417]">
-              <div className="flex items-center gap-1.5 bg-[#f4f7f5] px-3 py-1.5 rounded-lg border border-[#dde8e1]">
-                <CheckCircle2 className="w-4 h-4 text-[#25b967]" />
+            <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-semibold text-[#244026]">
+              <div className="flex items-center gap-1.5 bg-white px-3.5 py-2 rounded-full border border-[#e1ebda] shadow-xs">
+                <CheckCircle2 className="w-4 h-4 text-[#2f542c]" />
                 <span>Jaminan Full SNI</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-[#f4f7f5] px-3 py-1.5 rounded-lg border border-[#dde8e1]">
-                <CheckCircle2 className="w-4 h-4 text-[#25b967]" />
+              <div className="flex items-center gap-1.5 bg-white px-3.5 py-2 rounded-full border border-[#e1ebda] shadow-xs">
+                <CheckCircle2 className="w-4 h-4 text-[#2f542c]" />
                 <span>Armada Truk Sendiri</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-[#f4f7f5] px-3 py-1.5 rounded-lg border border-[#dde8e1]">
-                <CheckCircle2 className="w-4 h-4 text-[#25b967]" />
+              <div className="flex items-center gap-1.5 bg-white px-3.5 py-2 rounded-full border border-[#e1ebda] shadow-xs">
+                <CheckCircle2 className="w-4 h-4 text-[#2f542c]" />
                 <span>Bisa COD di Proyek</span>
               </div>
             </div>
 
           </div>
 
-          {/* Right Live Highlights / Trust Card */}
+          {/* Right Live Highlights / Apple Bento Card */}
           <div className="lg:col-span-5">
-            <div className="bg-white/95 backdrop-blur-xl rounded-3xl border border-[#dde8e1] p-6 sm:p-7 shadow-xl space-y-5">
+            <div className="bg-white/95 backdrop-blur-2xl rounded-[32px] border border-[#e1ebda] p-7 sm:p-8 shadow-apple space-y-6">
               
-              <div className="flex items-center justify-between pb-4 border-b border-[#eef3f0]">
+              <div className="flex items-center justify-between pb-4 border-b border-[#eef3ea]">
                 <div>
-                  <h3 className="text-lg font-black text-[#032417]">Keunggulan PT. IAP</h3>
+                  <span className="text-[10px] uppercase font-bold text-[#627a60] tracking-wider block">
+                    Distributor Terpercaya
+                  </span>
+                  <h3 className="text-xl font-extrabold text-[#1b3319]">Keunggulan PT. IAP</h3>
                 </div>
-                <div className="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-black flex items-center gap-1">
-                  <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+                <div className="px-3.5 py-1.5 rounded-full bg-[#e3eed9] text-[#244026] text-xs font-black flex items-center gap-1.5 shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-[#2f542c] animate-pulse" />
                   Siap Kirim
                 </div>
               </div>
 
               {/* Grid 4 Key Strengths */}
               <div className="grid grid-cols-2 gap-3.5">
-                <div className="p-3.5 rounded-2xl bg-[#f7faf8] border border-[#e2ebe5]">
-                  <div className="flex items-center gap-1.5 text-emerald-800 text-xs font-bold mb-1">
-                    <Percent className="w-4 h-4 text-emerald-600" />
+                <div className="p-4 rounded-2xl bg-[#f8faf6] border border-[#e6eee1] hover:border-[#c5d8be] transition-colors">
+                  <div className="flex items-center gap-1.5 text-[#2f542c] text-xs font-bold mb-1">
+                    <Percent className="w-4 h-4 text-[#2f542c]" />
                     <span>Harga Pabrik</span>
                   </div>
-                  <div className="text-[11px] text-[#56685f]">Diskon otomatis partai besar</div>
+                  <div className="text-[11px] text-[#536b51] leading-relaxed">Diskon otomatis partai besar</div>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-[#f7faf8] border border-[#e2ebe5]">
-                  <div className="flex items-center gap-1.5 text-emerald-800 text-xs font-bold mb-1">
-                    <Warehouse className="w-4 h-4 text-emerald-600" />
+                <div className="p-4 rounded-2xl bg-[#f8faf6] border border-[#e6eee1] hover:border-[#c5d8be] transition-colors">
+                  <div className="flex items-center gap-1.5 text-[#2f542c] text-xs font-bold mb-1">
+                    <Warehouse className="w-4 h-4 text-[#2f542c]" />
                     <span>Stok Ready</span>
                   </div>
-                  <div className="text-[11px] text-[#56685f]">Muat langsung dari Lembang</div>
+                  <div className="text-[11px] text-[#536b51] leading-relaxed">Muat langsung dari Lembang</div>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-[#f7faf8] border border-[#e2ebe5]">
-                  <div className="flex items-center gap-1.5 text-emerald-800 text-xs font-bold mb-1">
-                    <Truck className="w-4 h-4 text-emerald-600" />
+                <div className="p-4 rounded-2xl bg-[#f8faf6] border border-[#e6eee1] hover:border-[#c5d8be] transition-colors">
+                  <div className="flex items-center gap-1.5 text-[#2f542c] text-xs font-bold mb-1">
+                    <Truck className="w-4 h-4 text-[#2f542c]" />
                     <span>Armada Sendiri</span>
                   </div>
-                  <div className="text-[11px] text-[#56685f]">Dump truck & kargo nasional</div>
+                  <div className="text-[11px] text-[#536b51] leading-relaxed">Dump truck &amp; kargo nasional</div>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-[#f7faf8] border border-[#e2ebe5]">
-                  <div className="flex items-center gap-1.5 text-emerald-800 text-xs font-bold mb-1">
-                    <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                <div className="p-4 rounded-2xl bg-[#f8faf6] border border-[#e6eee1] hover:border-[#c5d8be] transition-colors">
+                  <div className="flex items-center gap-1.5 text-[#2f542c] text-xs font-bold mb-1">
+                    <ShieldCheck className="w-4 h-4 text-[#2f542c]" />
                     <span>9 Lini Bisnis</span>
                   </div>
-                  <div className="text-[11px] text-[#56685f]">Material, bor sumur & katering</div>
+                  <div className="text-[11px] text-[#536b51] leading-relaxed">Material, bor sumur &amp; katering</div>
                 </div>
               </div>
 
-              {/* Direct Quick WhatsApp Banner */}
-              <div className="p-4 rounded-2xl bg-gradient-to-r from-[#032417] to-[#0e6e42] text-white flex items-center justify-between text-xs">
+              {/* Quick WhatsApp Banner Pill */}
+              <div className="p-4 rounded-2xl bg-[#244026] text-white flex items-center justify-between text-xs shadow-apple-pill">
                 <div>
                   <span className="font-bold block text-sm">Butuh Dikirim Hari Ini?</span>
-                  <span className="text-emerald-200 text-xs">Konfirmasi jadwal truk sekarang.</span>
+                  <span className="text-[#cde0c2] text-xs">Konfirmasi jadwal truk sekarang.</span>
                 </div>
                 <a
                   href={COMPANY_INFO.whatsapp1}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-1.5 rounded-lg bg-[#25D366] text-white font-black text-xs hover:bg-[#20ba5a] transition-all flex items-center gap-1 shadow-xs"
+                  className="px-4 py-2 rounded-full bg-[#83c076] text-[#1b3319] font-extrabold text-xs hover:bg-[#97cf8b] transition-all flex items-center gap-1.5 shadow-sm transform active:scale-95"
                 >
                   <MessageCircle className="w-3.5 h-3.5" />
                   <span>Chat Admin</span>
@@ -171,6 +179,44 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
         </div>
+
+        {/* Floating Quick Procurement & Search Bar (Inspired by the Reference Image) */}
+        <div className="pt-2">
+          <div className="bg-[#c2d8b0] rounded-full p-2.5 sm:p-3 shadow-apple-floating border border-[#b2cc9f] flex flex-col sm:flex-row items-center gap-2 max-w-4xl mx-auto">
+            
+            {/* Input / Option 1 */}
+            <div className="w-full sm:flex-1 bg-white rounded-full px-5 py-2.5 flex items-center gap-2.5 shadow-xs">
+              <Search className="w-4 h-4 text-[#2f542c]" />
+              <input
+                type="text"
+                placeholder="Cari semen, besi full SNI, pasir truk, atau granit..."
+                className="w-full bg-transparent text-xs sm:text-sm font-medium text-[#1b3319] placeholder:text-[#7d967a] focus:outline-none"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') onScrollToCatalog();
+                }}
+              />
+            </div>
+
+            {/* Input / Option 2: Area Proyek */}
+            <div className="w-full sm:w-64 bg-white rounded-full px-5 py-2.5 flex items-center gap-2 shadow-xs">
+              <MapPin className="w-4 h-4 text-[#2f542c]" />
+              <span className="text-xs sm:text-sm font-semibold text-[#244026] truncate">
+                Depo Lembang &bull; Se-Bandung
+              </span>
+            </div>
+
+            {/* Action Pill Button */}
+            <button
+              onClick={onScrollToCatalog}
+              className="w-full sm:w-auto px-7 py-3 rounded-full bg-[#2f542c] text-white hover:bg-[#233f21] font-bold text-xs sm:text-sm shadow-apple-pill transition-all transform active:scale-95 whitespace-nowrap flex items-center justify-center gap-1.5"
+            >
+              <span>Eksplorasi Katalog</span>
+              <ArrowRight className="w-4 h-4 text-[#83c076]" />
+            </button>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );

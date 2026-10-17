@@ -46,17 +46,37 @@ export default function RootLayout({
                 theme: {
                   extend: {
                     colors: {
-                      primary: '#032417',
-                      'primary-light': '#0e6e42',
-                      'primary-container': '#084d2e',
-                      secondary: '#1db954',
-                      'secondary-container': '#c7ebd5',
-                      accent: '#f5a623',
-                      iapred: '#d92525',
-                      surface: '#ffffff',
-                      'surface-container-low': '#f4f7f5',
-                      'surface-container': '#eaf1ed',
-                      'surface-container-high': '#dde8e1',
+                      forest: {
+                        DEFAULT: '#2b4e28',
+                        hover: '#223f20',
+                        dark: '#1b3319',
+                        light: '#3a6736',
+                        subtle: '#eaf2e6',
+                      },
+                      sage: {
+                        DEFAULT: '#c2d8b0',
+                        light: '#e3eed9',
+                        subtle: '#f2f6ee',
+                        border: '#d1e2c6',
+                      },
+                      earth: {
+                        DEFAULT: '#8b5a36',
+                        light: '#b07a52',
+                        subtle: '#f5eee8',
+                      },
+                      canvas: '#f3f6ee',
+                      card: '#ffffff',
+                    },
+                    boxShadow: {
+                      apple: '0 10px 28px -6px rgba(35, 60, 30, 0.07), 0 4px 10px -2px rgba(35, 60, 30, 0.04)',
+                      'apple-hover': '0 20px 42px -8px rgba(35, 60, 30, 0.12), 0 8px 18px -4px rgba(35, 60, 30, 0.06)',
+                      'apple-floating': '0 18px 45px -10px rgba(30, 55, 25, 0.13), 0 8px 16px -4px rgba(30, 55, 25, 0.05)',
+                      'apple-pill': '0 8px 24px -4px rgba(40, 65, 35, 0.08)',
+                    },
+                    borderRadius: {
+                      '2xl': '1.25rem',
+                      '3xl': '1.75rem',
+                      '4xl': '2.25rem',
                     }
                   }
                 }
@@ -65,7 +85,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen flex flex-col font-sans antialiased text-[#032417] bg-[#f7faf8]">
+      <body className="min-h-screen flex flex-col font-sans antialiased text-[#1a2e19] bg-[#f3f6ee]">
         {children}
       </body>
     </html>

@@ -21,7 +21,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenProfile }) => {
   return (
-    <footer className="bg-[#032417] text-white pt-16 pb-12 border-t border-emerald-950">
+    <footer className="bg-[#1c361e] text-white pt-20 pb-12 rounded-t-[40px] border-t border-[#2e5431] shadow-apple-floating mt-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Top Grid */}
@@ -29,21 +29,21 @@ export const Footer: React.FC<FooterProps> = ({ onOpenProfile }) => {
           
           {/* Company Bio */}
           <div className="space-y-4">
-            <div className="bg-white/10 p-3 rounded-2xl inline-block">
+            <div className="bg-white/10 p-3 rounded-2xl inline-block backdrop-blur-md border border-white/10">
               <IAPLogo size={36} showText={false} />
             </div>
             <div>
-              <span className="font-black text-base tracking-tight text-white block">
+              <span className="font-extrabold text-base tracking-tight text-white block">
                 {COMPANY_INFO.name}
               </span>
-              <span className="text-xs font-bold text-emerald-400">
+              <span className="text-xs font-semibold text-[#a8d596]">
                 {COMPANY_INFO.shortName} — Perdagangan Umum & Jasa
               </span>
             </div>
-            <p className="text-xs text-emerald-200/80 leading-relaxed">
+            <p className="text-xs text-[#c6e3b8]/80 leading-relaxed">
               &ldquo;{COMPANY_INFO.tagline}&rdquo;
             </p>
-            <div className="flex items-center gap-2 text-xs font-bold text-[#25b967]">
+            <div className="flex items-center gap-2 text-xs font-semibold text-[#8ed878]">
               <ShieldCheck className="w-4 h-4" />
               <span>Kualitas Terpercaya & Pelayanan Ramah</span>
             </div>
@@ -51,7 +51,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenProfile }) => {
             {onOpenProfile && (
               <button
                 onClick={onOpenProfile}
-                className="inline-flex items-center gap-1.5 text-xs text-amber-300 font-bold hover:underline pt-1"
+                className="inline-flex items-center gap-1.5 text-xs text-[#dbe8d3] font-bold hover:text-white pt-1 transition-colors"
               >
                 <span>Baca Visi, Misi & Legalitas Kami</span>
                 <ExternalLink className="w-3 h-3" />

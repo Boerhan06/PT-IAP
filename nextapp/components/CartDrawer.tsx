@@ -373,12 +373,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
             </div>
 
             {/* Dual CTAs: WhatsApp Direct & Proforma Invoice */}
-            <div className="space-y-2">
+            <div className="space-y-2.5">
               <a
                 href={`https://wa.me/6285265458819?text=${waCartMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 px-4 rounded-xl bg-[#25D366] text-white hover:bg-[#20ba5a] font-black text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 transition-all transform active:scale-95"
+                className="w-full py-3.5 px-5 rounded-full bg-[#25D366] text-white hover:bg-[#20ba5a] font-bold text-xs sm:text-sm shadow-apple-pill flex items-center justify-center gap-2 transition-all transform active:scale-98"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Order Langsung via WhatsApp</span>
@@ -386,10 +386,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
               <button
                 onClick={onProceedToInvoice}
-                className="w-full py-3 px-4 rounded-xl bg-[#032417] text-white hover:bg-[#164e33] font-bold text-xs shadow-sm flex items-center justify-center gap-2 transition-all"
+                className="w-full py-3.5 px-5 rounded-full bg-[#244026] text-white hover:bg-[#1a301c] font-bold text-xs shadow-apple-pill flex items-center justify-center gap-2 transition-all active:scale-98"
               >
                 <span>Cetak Invoice Resmi (PDF)</span>
-                <ArrowRight className="w-4 h-4 text-[#25b967]" />
+                <ArrowRight className="w-4 h-4 text-[#8bd879]" />
               </button>
             </div>
           </div>

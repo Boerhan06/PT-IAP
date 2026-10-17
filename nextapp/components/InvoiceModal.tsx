@@ -254,13 +254,13 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
         </div>
 
         {/* Modal Footer Controls (Excluded in Print) */}
-        <div className="px-6 py-4 bg-[#f7faf8] border-t border-[#dde8e1] flex flex-wrap items-center justify-between gap-3 no-print">
+        <div className="px-6 py-4 bg-[#f8faf6] border-t border-[#dbe6d3] flex flex-wrap items-center justify-between gap-3 no-print">
           <div className="flex items-center gap-2">
             <button
               onClick={handleTrackRadar}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white border border-[#032417] text-[#032417] hover:bg-[#eaf1ed] text-xs font-bold transition-all shadow-xs"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-[#234226] text-[#234226] hover:bg-[#eef5eb] text-xs font-bold transition-all shadow-apple-pill active:scale-98"
             >
-              <Radio className="w-4 h-4 text-emerald-700 animate-pulse" />
+              <Radio className="w-4 h-4 text-[#2d522a] animate-pulse" />
               <span>Pantau Armada Truk GPS</span>
             </button>
 
@@ -268,7 +268,7 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
               href={`https://wa.me/6285265458819?text=${waInvoiceMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#25D366] text-white hover:bg-[#20ba5a] text-xs font-bold transition-all shadow-xs"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366] text-white hover:bg-[#20ba5a] text-xs font-bold transition-all shadow-apple-pill active:scale-98"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Konfirmasi ke WA Admin</span>
@@ -278,13 +278,13 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
           <div className="flex items-center gap-2">
             <button
               onClick={handlePrint}
-              className="px-4 py-2.5 rounded-xl bg-[#032417] text-white hover:bg-[#164e33] text-xs font-bold transition-all shadow-md"
+              className="px-5 py-2.5 rounded-full bg-[#244026] text-white hover:bg-[#1a301c] text-xs font-bold transition-all shadow-apple-pill active:scale-98"
             >
               Unduh Invoice PDF
             </button>
             <button
               onClick={onClose}
-              className="px-4 py-2.5 rounded-xl bg-[#eaf1ed] text-[#56685f] hover:text-[#032417] text-xs font-bold transition-all"
+              className="px-5 py-2.5 rounded-full bg-[#e8f0e4] text-[#4d634f] hover:text-[#1f3721] text-xs font-bold transition-all active:scale-98"
             >
               Tutup
             </button>

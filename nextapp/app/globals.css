@@ -1,114 +1,78 @@
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
-  --primary: #032417;
-  --primary-light: #164e33;
-  --primary-container: #0f3d26;
-  --secondary: #1db954;
-  --secondary-container: #c7ebd5;
-  --accent: #f59e0b;
-  --surface: #ffffff;
-  --surface-container-low: #f4f7f5;
-  --surface-container: #eaf1ed;
-  --surface-container-high: #dde8e1;
-  --border-color: #d1dfd6;
-  --text-primary: #051f14;
-  --text-muted: #56685f;
+  --apple-bg: #f3f6ee;
+  --apple-card: #ffffff;
+  --forest: #2b4e28;
+  --forest-hover: #223f20;
+  --forest-dark: #1b3319;
+  --sage: #c2d8b0;
+  --sage-light: #e3eed9;
+  --sage-subtle: #f4f8f0;
+  --border-organic: #e1ebda;
+  --text-dark: #1a2e19;
+  --text-muted: #536b51;
 }
 
 body {
-  background-color: #f7faf8;
-  color: #051f14;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--apple-bg);
+  color: var(--text-dark);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom Brand Utilities */
-.bg-primary { background-color: #032417 !important; }
-.text-primary { color: #032417 !important; }
-.border-primary { border-color: #032417 !important; }
-.bg-primary-light { background-color: #0e6e42 !important; }
-.bg-primary-container { background-color: #084d2e !important; }
-.bg-secondary { background-color: #1db954 !important; }
-.text-secondary { color: #1db954 !important; }
-.bg-secondary-container { background-color: #c7ebd5 !important; }
-.bg-accent { background-color: #f5a623 !important; }
-.text-accent { color: #f5a623 !important; }
-.bg-iapred { background-color: #d92525 !important; }
-.text-iapred { color: #d92525 !important; }
-.bg-surface-container { background-color: #eaf1ed !important; }
-.bg-surface-container-low { background-color: #f4f7f5 !important; }
-.bg-surface-container-high { background-color: #dde8e1 !important; }
+/* Apple Smooth Shadows */
+.shadow-apple {
+  box-shadow: 0 10px 28px -6px rgba(35, 60, 30, 0.07), 0 4px 10px -2px rgba(35, 60, 30, 0.04);
+}
 
-/* Custom Scrollbar */
+.shadow-apple-hover:hover {
+  box-shadow: 0 20px 42px -8px rgba(35, 60, 30, 0.12), 0 8px 18px -4px rgba(35, 60, 30, 0.06);
+}
+
+.shadow-apple-floating {
+  box-shadow: 0 18px 45px -10px rgba(30, 55, 25, 0.13), 0 8px 16px -4px rgba(30, 55, 25, 0.05);
+}
+
+.shadow-apple-pill {
+  box-shadow: 0 8px 24px -4px rgba(40, 65, 35, 0.08);
+}
+
+/* Brand Organic Colors */
+.bg-apple-canvas { background-color: #f3f6ee; }
+.bg-forest { background-color: #2b4e28; }
+.bg-forest-hover:hover { background-color: #223f20; }
+.text-forest { color: #2b4e28; }
+.border-forest { border-color: #2b4e28; }
+
+.bg-sage { background-color: #c2d8b0; }
+.bg-sage-light { background-color: #e3eed9; }
+.text-sage-dark { color: #233d21; }
+.border-sage { border-color: #d1e2c6; }
+
+/* Custom Sleek Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(241, 244, 242, 0.6);
+  background: #f1f5ec;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(69, 102, 74, 0.25);
+  background: #c3d6b3;
   border-radius: 9999px;
+  border: 2px solid #f1f5ec;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(3, 36, 23, 0.5);
+  background: #2b4e28;
 }
 
-/* Animations */
-@keyframes pulseSubtle {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.04);
-    opacity: 0.9;
-  }
-}
-
-.animate-pulse-subtle {
-  animation: pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pingRadar {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.9;
-  }
-  70% {
-    transform: scale(2.2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(2.2);
-    opacity: 0;
-  }
-}
-
-.radar-ping {
-  animation: pingRadar 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-/* Print Styles for Invoice & Faktur Pajak */
-@media print {
-  body * {
-    visibility: hidden;
-  }
-  #printable-invoice, #printable-invoice * {
-    visibility: visible;
-  }
-  #printable-invoice {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    padding: 24px;
-    box-shadow: none !important;
-    border: none !important;
-    background: #ffffff !important;
-  }
-  .no-print {
-    display: none !important;
-  }
+/* Smooth transitions */
+* {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }

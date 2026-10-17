@@ -163,70 +163,68 @@ export default function Home() {
         onScrollToCatalog={scrollToCatalog}
       />
 
-      {/* 3 Core Pillars Slogan Section: Harga Murah, Mudah, Kualitas Terpercaya */}
-      <section className="py-12 bg-white border-b border-[#dde8e1]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            {/* Pilar 1: Harga Murah */}
-            <div className="p-6 rounded-3xl bg-[#f7faf8] border border-[#dde8e1] space-y-3 hover:border-emerald-700/40 transition-all">
-              <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
-                <Percent className="w-6 h-6 text-emerald-800" />
-              </div>
-              <h3 className="text-base font-black text-[#032417]">Harga Grosir Tangan Pertama</h3>
-              <p className="text-xs text-[#56685f] leading-relaxed">
-                Langsung dari pabrik. Beli banyak, harga otomatis dipotong untuk hemat anggaran proyek Anda.
-              </p>
+      {/* 3 Core Pillars Slogan Section: Apple Bento Card Style */}
+      <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          {/* Pilar 1: Harga Murah */}
+          <div className="p-7 rounded-[32px] bg-white border border-[#e1ebda] shadow-apple hover:shadow-apple-hover transition-all duration-300 space-y-3.5 group">
+            <div className="w-12 h-12 rounded-2xl bg-[#e3eed9] text-[#2f542c] flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform">
+              <Percent className="w-6 h-6 text-[#2f542c]" />
             </div>
-
-            {/* Pilar 2: Mudah */}
-            <div className="p-6 rounded-3xl bg-[#f7faf8] border border-[#dde8e1] space-y-3 hover:border-emerald-700/40 transition-all">
-              <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center">
-                <Clock className="w-6 h-6 text-amber-800" />
-              </div>
-              <h3 className="text-base font-black text-[#032417]">Pesan Kilat & Bisa COD</h3>
-              <p className="text-xs text-[#56685f] leading-relaxed">
-                Order via WA dalam 1 klik. Barang sampai di proyek dan dicek, baru Anda bayar.
-              </p>
-            </div>
-
-            {/* Pilar 3: Kualitas Terpercaya */}
-            <div className="p-6 rounded-3xl bg-[#f7faf8] border border-[#dde8e1] space-y-3 hover:border-emerald-700/40 transition-all">
-              <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
-                <ShieldCheck className="w-6 h-6 text-emerald-800" />
-              </div>
-              <h3 className="text-base font-black text-[#032417]">Mutu Asli Standar SNI</h3>
-              <p className="text-xs text-[#56685f] leading-relaxed">
-                Besi presisi, semen resmi pabrik, dan takaran pasir 1 truk penuh tanpa curang.
-              </p>
-            </div>
-
+            <h3 className="text-base font-extrabold text-[#1b3319]">Harga Grosir Tangan Pertama</h3>
+            <p className="text-xs text-[#536b51] leading-relaxed">
+              Langsung dari pabrik. Beli banyak, harga otomatis dipotong untuk hemat anggaran proyek Anda.
+            </p>
           </div>
+
+          {/* Pilar 2: Mudah */}
+          <div className="p-7 rounded-[32px] bg-white border border-[#e1ebda] shadow-apple hover:shadow-apple-hover transition-all duration-300 space-y-3.5 group">
+            <div className="w-12 h-12 rounded-2xl bg-[#f5ede2] text-[#8c5c36] flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform">
+              <Clock className="w-6 h-6 text-[#8c5c36]" />
+            </div>
+            <h3 className="text-base font-extrabold text-[#1b3319]">Pesan Kilat &amp; Bisa COD</h3>
+            <p className="text-xs text-[#536b51] leading-relaxed">
+              Order via WA dalam 1 klik. Barang sampai di proyek dan dicek, baru Anda bayar.
+            </p>
+          </div>
+
+          {/* Pilar 3: Kualitas Terpercaya */}
+          <div className="p-7 rounded-[32px] bg-white border border-[#e1ebda] shadow-apple hover:shadow-apple-hover transition-all duration-300 space-y-3.5 group">
+            <div className="w-12 h-12 rounded-2xl bg-[#e3eed9] text-[#2f542c] flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform">
+              <ShieldCheck className="w-6 h-6 text-[#2f542c]" />
+            </div>
+            <h3 className="text-base font-extrabold text-[#1b3319]">Mutu Asli Standar SNI</h3>
+            <p className="text-xs text-[#536b51] leading-relaxed">
+              Besi presisi, semen resmi pabrik, dan takaran pasir 1 truk penuh tanpa curang.
+            </p>
+          </div>
+
         </div>
       </section>
 
       {/* Main Material Catalog Grid */}
-      <section id="katalog" className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-8">
+      <section id="katalog" className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-8">
         
         {/* Catalog Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#c7ebd5] text-[#032417] text-xs font-bold mb-2">
-              <Boxes className="w-3.5 h-3.5 text-emerald-800" />
+            <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#e3eed9] text-[#244026] text-xs font-bold mb-2.5 border border-[#cde0c2] shadow-xs">
+              <Boxes className="w-3.5 h-3.5 text-[#2f542c]" />
               <span>Daftar Harga Resmi PT IHSAN ABDUL PATAH</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-[#032417] tracking-tight">
-              Katalog Material & Layanan
+            <h2 className="text-2xl sm:text-3xl font-black text-[#1b3319] tracking-tight">
+              Katalog Material &amp; Layanan
             </h2>
-            <p className="text-xs sm:text-sm text-[#56685f] mt-1">
+            <p className="text-xs sm:text-sm text-[#536b51] mt-1 font-medium">
               Pilih barang dan atur jumlah untuk klaim potongan harga borongan.
             </p>
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-xs text-[#56685f] font-medium">Skema Harga:</span>
-            <span className={`px-3 py-1 rounded-xl text-xs font-black ${
-              isB2BMode ? 'bg-[#032417] text-white' : 'bg-gray-200 text-[#032417]'
+            <span className="text-xs text-[#637d61] font-medium">Skema Harga:</span>
+            <span className={`px-4 py-1.5 rounded-full text-xs font-black shadow-xs ${
+              isB2BMode ? 'bg-[#244026] text-white' : 'bg-white text-[#1b3319] border border-[#e1ebda]'
             }`}>
               {isB2BMode ? 'MODE GROSIR' : 'MODE ECERAN'}
             </span>
@@ -252,16 +250,16 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Catalog Bottom CTA Banner */}
-        <div className="p-8 rounded-3xl bg-gradient-to-r from-[#032417] via-[#0e6e42] to-[#164e33] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        {/* Catalog Bottom CTA Banner - Apple Pill Card Style */}
+        <div className="p-8 sm:p-10 rounded-[36px] bg-[#244026] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-apple-floating border border-[#385e3a]">
           <div className="space-y-2 max-w-xl text-center md:text-left">
-            <span className="px-2.5 py-1 rounded-md text-[10px] font-black bg-amber-400 text-[#032417] uppercase tracking-wider">
+            <span className="px-3 py-1 rounded-full text-[10px] font-black bg-[#f5d565] text-[#1b3319] uppercase tracking-wider inline-block">
               Pemesanan Khusus / Proyek
             </span>
             <h3 className="text-xl sm:text-2xl font-black">
               Punya RAB Proyek Sendiri?
             </h3>
-            <p className="text-xs sm:text-sm text-emerald-200">
+            <p className="text-xs sm:text-sm text-[#d8ebd2] leading-relaxed">
               Kirim daftar belanja Anda ke WhatsApp. Dapatkan hitungan diskon borongan dalam 5 menit!
             </p>
           </div>
@@ -270,9 +268,9 @@ export default function Home() {
             href={COMPANY_INFO.whatsapp1}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-[#25D366] text-white hover:bg-[#20ba5a] text-sm font-black shadow-lg transition-all transform active:scale-95"
+            className="flex-shrink-0 flex items-center gap-2.5 px-7 py-4 rounded-full bg-[#83c076] text-[#1b3319] hover:bg-[#97cf8b] text-xs sm:text-sm font-extrabold shadow-apple-pill transition-all transform active:scale-95"
           >
-            <MessageCircle className="w-5 h-5" />
+            <MessageCircle className="w-4 h-4" />
             <span>Kirim RAB via WA</span>
           </a>
         </div>
@@ -288,55 +286,55 @@ export default function Home() {
         onOpenRadar={() => setIsRadarOpen(true)}
       />
 
-      {/* 4 Langkah Pemesanan Mudah (SOP) */}
-      <section className="py-16 bg-[#f7faf8] border-b border-[#dde8e1]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      {/* 4 Langkah Pemesanan Mudah (SOP) - Apple Island Card */}
+      <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="bg-white/80 backdrop-blur-xl rounded-[36px] p-8 sm:p-10 border border-[#e1ebda] shadow-apple space-y-8">
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-2xl font-black text-[#032417] tracking-tight">
+            <h2 className="text-2xl font-black text-[#1b3319] tracking-tight">
               4 Langkah Order Cepat
             </h2>
-            <p className="text-xs sm:text-sm text-[#56685f] mt-1.5">
+            <p className="text-xs sm:text-sm text-[#536b51] mt-1.5">
               Tanpa birokrasi rumit, material langsung meluncur ke titik proyek.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-3xl border border-[#dde8e1] space-y-2.5 shadow-xs">
-              <div className="w-9 h-9 rounded-xl bg-[#032417] text-[#25b967] flex items-center justify-center font-black text-sm">
+            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#2f542c] transition-all shadow-xs">
+              <div className="w-10 h-10 rounded-full bg-[#2f542c] text-[#a0d995] flex items-center justify-center font-black text-xs shadow-apple-pill">
                 01
               </div>
-              <h4 className="text-sm font-bold text-[#032417]">Pilih Barang</h4>
-              <p className="text-xs text-[#56685f] leading-relaxed">
+              <h4 className="text-sm font-extrabold text-[#1b3319]">Pilih Barang</h4>
+              <p className="text-xs text-[#536b51] leading-relaxed">
                 Masukkan jumlah ke keranjang atau klik WA.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-3xl border border-[#dde8e1] space-y-2.5 shadow-xs">
-              <div className="w-9 h-9 rounded-xl bg-[#032417] text-[#25b967] flex items-center justify-center font-black text-sm">
+            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#2f542c] transition-all shadow-xs">
+              <div className="w-10 h-10 rounded-full bg-[#2f542c] text-[#a0d995] flex items-center justify-center font-black text-xs shadow-apple-pill">
                 02
               </div>
-              <h4 className="text-sm font-bold text-[#032417]">Kunci Harga</h4>
-              <p className="text-xs text-[#56685f] leading-relaxed">
-                Admin konfirmasi diskon & jadwal truk.
+              <h4 className="text-sm font-extrabold text-[#1b3319]">Kunci Harga</h4>
+              <p className="text-xs text-[#536b51] leading-relaxed">
+                Admin konfirmasi diskon &amp; jadwal truk.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-3xl border border-[#dde8e1] space-y-2.5 shadow-xs">
-              <div className="w-9 h-9 rounded-xl bg-[#032417] text-[#25b967] flex items-center justify-center font-black text-sm">
+            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#2f542c] transition-all shadow-xs">
+              <div className="w-10 h-10 rounded-full bg-[#2f542c] text-[#a0d995] flex items-center justify-center font-black text-xs shadow-apple-pill">
                 03
               </div>
-              <h4 className="text-sm font-bold text-[#032417]">Truk Berangkat</h4>
-              <p className="text-xs text-[#56685f] leading-relaxed">
+              <h4 className="text-sm font-extrabold text-[#1b3319]">Truk Berangkat</h4>
+              <p className="text-xs text-[#536b51] leading-relaxed">
                 Muat dan kirim langsung dari Depo Lembang.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-3xl border border-[#dde8e1] space-y-2.5 shadow-xs">
-              <div className="w-9 h-9 rounded-xl bg-[#032417] text-[#25b967] flex items-center justify-center font-black text-sm">
+            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#2f542c] transition-all shadow-xs">
+              <div className="w-10 h-10 rounded-full bg-[#2f542c] text-[#a0d995] flex items-center justify-center font-black text-xs shadow-apple-pill">
                 04
               </div>
-              <h4 className="text-sm font-bold text-[#032417]">Cek & Lunas</h4>
-              <p className="text-xs text-[#56685f] leading-relaxed">
+              <h4 className="text-sm font-extrabold text-[#1b3319]">Cek &amp; Lunas</h4>
+              <p className="text-xs text-[#536b51] leading-relaxed">
                 Cek fisik di lokasi, tanda tangan, bayar COD.
               </p>
             </div>
@@ -347,21 +345,21 @@ export default function Home() {
       {/* Footer */}
       <Footer onOpenProfile={() => setIsProfileOpen(true)} />
 
-      {/* Floating Sticky WhatsApp Call to Action Button */}
+      {/* Floating Sticky WhatsApp Call to Action Button - Apple Pill Style */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
         <a
           href={COMPANY_INFO.whatsapp1}
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center gap-2.5 px-4 py-3 bg-[#25D366] text-white rounded-full shadow-2xl hover:bg-[#20ba5a] transition-all transform hover:scale-105 active:scale-95"
+          className="group flex items-center gap-2.5 px-5 py-3.5 bg-[#2f542c] text-white rounded-full shadow-apple-floating hover:bg-[#233f21] border border-[#426c3d] transition-all transform hover:scale-105 active:scale-95"
           title="Chat WhatsApp dengan Tim Penjualan PT. IAP"
         >
           <div className="relative">
-            <MessageCircle className="w-6 h-6" />
-            <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-white rounded-full animate-ping" />
+            <MessageCircle className="w-5 h-5 text-[#83c076]" />
+            <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#83c076] rounded-full animate-ping" />
           </div>
           <div className="hidden sm:flex flex-col text-left pr-1">
-            <span className="text-xs font-black leading-tight">Order / Nego Cepat • Chat Sales Sekarang</span>
+            <span className="text-xs font-bold leading-tight">Order / Nego Cepat &bull; Chat Sales Sekarang</span>
           </div>
         </a>
       </div>
