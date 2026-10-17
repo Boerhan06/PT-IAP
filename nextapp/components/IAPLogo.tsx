@@ -59,9 +59,6 @@ export const IAPLogo: React.FC<IAPLogoProps> = ({
             <span className="font-black text-lg tracking-tight text-[#032417]">
               PT. IAP
             </span>
-            <span className="text-[10px] font-bold px-1.5 py-0.2 bg-emerald-100 text-emerald-800 rounded">
-              Resmi
-            </span>
           </div>
           <span className="text-[11px] font-extrabold tracking-wider text-[#56685f] uppercase -mt-0.5">
             PT IHSAN ABDUL PATAH
