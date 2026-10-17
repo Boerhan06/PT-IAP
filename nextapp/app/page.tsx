@@ -14,6 +14,7 @@ import { FleetRadarModal } from '@/components/FleetRadarModal';
 import { BoQUploadModal } from '@/components/BoQUploadModal';
 import { CompanyProfileModal } from '@/components/CompanyProfileModal';
 import { CommandPalette } from '@/components/CommandPalette';
+import { AuthModal } from '@/components/AuthModal';
 import { Footer } from '@/components/Footer';
 import { 
   ShieldCheck, 
@@ -49,6 +50,9 @@ export default function Home() {
   const [isBoQOpen, setIsBoQOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
+  const [currentUser, setCurrentUser] = useState<{ name: string; role: string } | null>(null);
 
   // Toast Notification
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -154,6 +158,14 @@ export default function Home() {
         onOpenRadar={() => setIsRadarOpen(true)}
         onOpenBoQ={() => setIsBoQOpen(true)}
         onOpenProfile={() => setIsProfileOpen(true)}
+        onOpenLogin={() => {
+          setAuthMode('login');
+          setIsAuthOpen(true);
+        }}
+        onOpenRegister={() => {
+          setAuthMode('register');
+          setIsAuthOpen(true);
+        }}
       />
 
       {/* Hero Section */}
@@ -422,6 +434,16 @@ export default function Home() {
         onOpenRadar={() => setIsRadarOpen(true)}
         onOpenBoQ={() => setIsBoQOpen(true)}
         onOpenProfile={() => setIsProfileOpen(true)}
+      />
+
+      <AuthModal
+        isOpen={isAuthOpen}
+        onClose={() => setIsAuthOpen(false)}
+        initialMode={authMode}
+        onSuccess={(user) => {
+          setCurrentUser(user);
+          showToast(`Selamat datang, ${user.name} (${user.role})!`);
+        }}
       />
 
     </div>

@@ -15,6 +15,7 @@ import {
   Search,
   MapPin
 } from 'lucide-react';
+import { HeroDiscountSlider } from '@/components/HeroDiscountSlider';
 
 interface HeroProps {
   onOpenBoQ: () => void;
@@ -106,76 +107,9 @@ export const Hero: React.FC<HeroProps> = ({
 
           </div>
 
-          {/* Right Live Highlights / Apple Bento Card */}
+          {/* Right Live Highlights / Looping 3-Card Discount Carousel */}
           <div className="lg:col-span-5">
-            <div className="bg-white/95 backdrop-blur-2xl rounded-[32px] border border-[#e1ebda] p-7 sm:p-8 shadow-apple space-y-6">
-              
-              <div className="flex items-center justify-between pb-4 border-b border-[#eef3ea]">
-                <div>
-                  <span className="text-[10px] uppercase font-bold text-[#627a60] tracking-wider block">
-                    Distributor Terpercaya
-                  </span>
-                  <h3 className="text-xl font-extrabold text-[#1b3319]">Keunggulan PT. IAP</h3>
-                </div>
-                <div className="px-3.5 py-1.5 rounded-full bg-[#e3eed9] text-[#244026] text-xs font-black flex items-center gap-1.5 shadow-xs">
-                  <span className="w-2 h-2 rounded-full bg-[#2f542c] animate-pulse" />
-                  Siap Kirim
-                </div>
-              </div>
-
-              {/* Grid 4 Key Strengths */}
-              <div className="grid grid-cols-2 gap-3.5">
-                <div className="p-4 rounded-2xl bg-[#f8faf6] border border-[#e6eee1] hover:border-[#c5d8be] transition-colors">
-                  <div className="flex items-center gap-1.5 text-[#2f542c] text-xs font-bold mb-1">
-                    <Percent className="w-4 h-4 text-[#2f542c]" />
-                    <span>Harga Pabrik</span>
-                  </div>
-                  <div className="text-[11px] text-[#536b51] leading-relaxed">Diskon otomatis partai besar</div>
-                </div>
-
-                <div className="p-4 rounded-2xl bg-[#f8faf6] border border-[#e6eee1] hover:border-[#c5d8be] transition-colors">
-                  <div className="flex items-center gap-1.5 text-[#2f542c] text-xs font-bold mb-1">
-                    <Warehouse className="w-4 h-4 text-[#2f542c]" />
-                    <span>Stok Ready</span>
-                  </div>
-                  <div className="text-[11px] text-[#536b51] leading-relaxed">Muat langsung dari Lembang</div>
-                </div>
-
-                <div className="p-4 rounded-2xl bg-[#f8faf6] border border-[#e6eee1] hover:border-[#c5d8be] transition-colors">
-                  <div className="flex items-center gap-1.5 text-[#2f542c] text-xs font-bold mb-1">
-                    <Truck className="w-4 h-4 text-[#2f542c]" />
-                    <span>Armada Sendiri</span>
-                  </div>
-                  <div className="text-[11px] text-[#536b51] leading-relaxed">Dump truck &amp; kargo nasional</div>
-                </div>
-
-                <div className="p-4 rounded-2xl bg-[#f8faf6] border border-[#e6eee1] hover:border-[#c5d8be] transition-colors">
-                  <div className="flex items-center gap-1.5 text-[#2f542c] text-xs font-bold mb-1">
-                    <ShieldCheck className="w-4 h-4 text-[#2f542c]" />
-                    <span>9 Lini Bisnis</span>
-                  </div>
-                  <div className="text-[11px] text-[#536b51] leading-relaxed">Material, bor sumur &amp; katering</div>
-                </div>
-              </div>
-
-              {/* Quick WhatsApp Banner Pill */}
-              <div className="p-4 rounded-2xl bg-[#3f6c34] text-white flex items-center justify-between text-xs shadow-apple-pill">
-                <div>
-                  <span className="font-bold block text-sm">Butuh Dikirim Hari Ini?</span>
-                  <span className="text-[#e2f0dc] text-xs">Konfirmasi jadwal truk sekarang.</span>
-                </div>
-                <a
-                  href={COMPANY_INFO.whatsapp1}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-full bg-white text-[#284621] font-extrabold text-xs hover:bg-[#f4f8f2] transition-all flex items-center gap-1.5 shadow-sm transform active:scale-95"
-                >
-                  <MessageCircle className="w-3.5 h-3.5 text-[#3f6c34]" />
-                  <span>Chat Admin</span>
-                </a>
-              </div>
-
-            </div>
+            <HeroDiscountSlider onScrollToCatalog={onScrollToCatalog} />
           </div>
 
         </div>
