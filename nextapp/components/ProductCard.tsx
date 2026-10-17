@@ -113,7 +113,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           <div className="flex items-center justify-between">
             <div>
               <span className="text-xs font-black text-emerald-900 block">
-                Harga Grosir Borongan:
+                Harga Borongan:
               </span>
               <span className="text-[10px] text-[#56685f] font-medium">{product.b2bLabel}</span>
             </div>
@@ -133,7 +133,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 ? 'bg-emerald-100 text-emerald-800' 
                 : 'bg-amber-100 text-amber-800'
             }`}>
-              {qualifiesForB2B ? 'Harga Grosir Aktif' : 'Harga Eceran'}
+              {qualifiesForB2B ? 'Harga Borongan Aktif' : 'Harga Eceran'}
             </span>
           </div>
         </div>
@@ -176,12 +176,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               {added ? (
                 <>
                   <Check className="w-4 h-4" />
-                  <span>Masuk Keranjang!</span>
+                  <span>Ditambahkan!</span>
                 </>
               ) : (
                 <>
                   <ShoppingCart className="w-4 h-4 text-[#25b967]" />
-                  <span>Beli Sekarang</span>
+                  <span>+ Keranjang</span>
                 </>
               )}
             </button>
@@ -198,10 +198,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-emerald-700 font-bold hover:text-emerald-900 transition-colors"
-              title="Pesan langsung lewat WhatsApp"
+              title="Beli langsung lewat WhatsApp"
             >
               <MessageCircle className="w-3.5 h-3.5 text-[#25D366]" />
-              <span>Pesan via WA</span>
+              <span>Beli via WA</span>
             </a>
           </div>
         </div>

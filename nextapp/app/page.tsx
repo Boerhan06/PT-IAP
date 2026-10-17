@@ -173,9 +173,9 @@ export default function Home() {
               <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
                 <Percent className="w-6 h-6 text-emerald-800" />
               </div>
-              <h3 className="text-base font-black text-[#032417]">Harga Murah & Bersaing</h3>
+              <h3 className="text-base font-black text-[#032417]">Harga Grosir Tangan Pertama</h3>
               <p className="text-xs text-[#56685f] leading-relaxed">
-                Pasokan langsung dari distributor utama dan pabrik. <strong>Pemesanan dalam jumlah banyak, harga langsung kami kurangi</strong> untuk memaksimalkan efisiensi dana Anda.
+                Langsung dari pabrik. Beli banyak, harga otomatis dipotong untuk hemat anggaran proyek Anda.
               </p>
             </div>
 
@@ -184,9 +184,9 @@ export default function Home() {
               <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center">
                 <Clock className="w-6 h-6 text-amber-800" />
               </div>
-              <h3 className="text-base font-black text-[#032417]">Proses Mudah & Cepat</h3>
+              <h3 className="text-base font-black text-[#032417]">Pesan Kilat & Bisa COD</h3>
               <p className="text-xs text-[#56685f] leading-relaxed">
-                Pesan via website atau chat WhatsApp langsung. Tersedia pembayaran di tempat (COD) saat barang sampai di lokasi proyek untuk kenyamanan dan keamanan transaksi.
+                Order via WA dalam 1 klik. Barang sampai di proyek dan dicek, baru Anda bayar.
               </p>
             </div>
 
@@ -195,9 +195,9 @@ export default function Home() {
               <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
                 <ShieldCheck className="w-6 h-6 text-emerald-800" />
               </div>
-              <h3 className="text-base font-black text-[#032417]">Kualitas Terpercaya (SNI)</h3>
+              <h3 className="text-base font-black text-[#032417]">Mutu Asli Standar SNI</h3>
               <p className="text-xs text-[#56685f] leading-relaxed">
-                Besi beton full SNI, semen merk terkemuka (Padang, Tiga Roda, Holcim), pasir cuci bersih, hingga armada dump truck siap antar tepat waktu.
+                Besi presisi, semen resmi pabrik, dan takaran pasir 1 truk penuh tanpa curang.
               </p>
             </div>
 
@@ -216,10 +216,10 @@ export default function Home() {
               <span>Daftar Harga Resmi PT IHSAN ABDUL PATAH</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-[#032417] tracking-tight">
-              Katalog Material Bangunan & Jasa Terpadu
+              Katalog Material & Layanan
             </h2>
             <p className="text-xs sm:text-sm text-[#56685f] mt-1">
-              Pilih material kebutuhan proyek Anda. Beli satuan eceran atau dapatkan harga borongan dengan potongan spesial.
+              Pilih barang dan atur jumlah untuk klaim potongan harga borongan.
             </p>
           </div>
 
@@ -228,7 +228,7 @@ export default function Home() {
             <span className={`px-3 py-1 rounded-xl text-xs font-black ${
               isB2BMode ? 'bg-[#032417] text-white' : 'bg-gray-200 text-[#032417]'
             }`}>
-              {isB2BMode ? 'HARGA GROSIR (DISCON BORONGAN)' : 'HARGA ECERAN'}
+              {isB2BMode ? 'MODE GROSIR' : 'MODE ECERAN'}
             </span>
           </div>
         </div>
@@ -259,10 +259,10 @@ export default function Home() {
               Pemesanan Khusus / Proyek
             </span>
             <h3 className="text-xl sm:text-2xl font-black">
-              Punya Daftar Belanja Material Sendiri atau Butuh Penawaran RAB?
+              Punya RAB Proyek Sendiri?
             </h3>
             <p className="text-xs sm:text-sm text-emerald-200">
-              Kirimkan rincian kebutuhan material proyek Anda ke WhatsApp kami. Tim sales PT. IAP siap memberikan penawaran harga terbaik dalam hitungan menit.
+              Kirim daftar belanja Anda ke WhatsApp. Dapatkan hitungan diskon borongan dalam 5 menit!
             </p>
           </div>
 
@@ -273,7 +273,7 @@ export default function Home() {
             className="flex-shrink-0 flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-[#25D366] text-white hover:bg-[#20ba5a] text-sm font-black shadow-lg transition-all transform active:scale-95"
           >
             <MessageCircle className="w-5 h-5" />
-            <span>Kirim Rincian ke WhatsApp</span>
+            <span>Kirim RAB via WA</span>
           </a>
         </div>
 
@@ -293,10 +293,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-2xl font-black text-[#032417] tracking-tight">
-              4 Langkah Mudah Pemesanan Material di PT. IAP
+              4 Langkah Order Cepat
             </h2>
             <p className="text-xs sm:text-sm text-[#56685f] mt-1.5">
-              Proses transparan, cepat, dan aman tanpa birokrasi rumit untuk kelancaran pembangunan Anda.
+              Tanpa birokrasi rumit, material langsung meluncur ke titik proyek.
             </p>
           </div>
 
@@ -305,9 +305,9 @@ export default function Home() {
               <div className="w-9 h-9 rounded-xl bg-[#032417] text-[#25b967] flex items-center justify-center font-black text-sm">
                 01
               </div>
-              <h4 className="text-sm font-bold text-[#032417]">Pilih Material / Jasa</h4>
+              <h4 className="text-sm font-bold text-[#032417]">Pilih Barang</h4>
               <p className="text-xs text-[#56685f] leading-relaxed">
-                Tentukan spesifikasi besi beton, semen, pasir, atau baja ringan sesuai kebutuhan proyek Anda.
+                Masukkan jumlah ke keranjang atau klik WA.
               </p>
             </div>
 
@@ -315,9 +315,9 @@ export default function Home() {
               <div className="w-9 h-9 rounded-xl bg-[#032417] text-[#25b967] flex items-center justify-center font-black text-sm">
                 02
               </div>
-              <h4 className="text-sm font-bold text-[#032417]">Konfirmasi Harga & Jadwal</h4>
+              <h4 className="text-sm font-bold text-[#032417]">Kunci Harga</h4>
               <p className="text-xs text-[#56685f] leading-relaxed">
-                Tim admin PT. IAP memverifikasi pesanan, diskon borongan, dan kesiapan armada dump truck Lembang.
+                Admin konfirmasi diskon & jadwal truk.
               </p>
             </div>
 
@@ -325,9 +325,9 @@ export default function Home() {
               <div className="w-9 h-9 rounded-xl bg-[#032417] text-[#25b967] flex items-center justify-center font-black text-sm">
                 03
               </div>
-              <h4 className="text-sm font-bold text-[#032417]">Pengantaran Armada Truk</h4>
+              <h4 className="text-sm font-bold text-[#032417]">Truk Berangkat</h4>
               <p className="text-xs text-[#56685f] leading-relaxed">
-                Material dimuat langsung dari Depo Pusat Lembang dan diantar ke alamat proyek Anda dengan cepat.
+                Muat dan kirim langsung dari Depo Lembang.
               </p>
             </div>
 
@@ -335,9 +335,9 @@ export default function Home() {
               <div className="w-9 h-9 rounded-xl bg-[#032417] text-[#25b967] flex items-center justify-center font-black text-sm">
                 04
               </div>
-              <h4 className="text-sm font-bold text-[#032417]">Pemeriksaan & Serah Terima</h4>
+              <h4 className="text-sm font-bold text-[#032417]">Cek & Lunas</h4>
               <p className="text-xs text-[#56685f] leading-relaxed">
-                Cek fisik material di lokasi bersama supir kami, dilanjutkan penandatanganan BAST atau pelunasan COD.
+                Cek fisik di lokasi, tanda tangan, bayar COD.
               </p>
             </div>
           </div>
@@ -361,8 +361,7 @@ export default function Home() {
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-white rounded-full animate-ping" />
           </div>
           <div className="hidden sm:flex flex-col text-left pr-1">
-            <span className="text-[10px] uppercase font-black tracking-wider text-emerald-100">Hotline Resmi PT. IAP</span>
-            <span className="text-xs font-black leading-tight">Chat WhatsApp (0852 6545 8819)</span>
+            <span className="text-xs font-black leading-tight">Order / Nego Cepat • Chat Sales Sekarang</span>
           </div>
         </a>
       </div>

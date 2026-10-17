@@ -42,11 +42,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-2 truncate">
             <span className="w-2 h-2 rounded-full bg-[#25b967] animate-pulse flex-shrink-0" />
             <span className="text-emerald-200">
-              <strong>Depo Pusat Lembang:</strong> Jl. Lulurung II Kp. Cijengkol, Wangunsari, Lembang, Bandung Barat
+              <strong>Depo Pusat:</strong> Jl. Lulurung II, Lembang, Bandung Barat
             </span>
           </div>
           <div className="hidden sm:flex items-center gap-4 text-emerald-300 font-medium">
-            <span>&ldquo;Harga Murah, Mudah, dan Kualitas Terpercaya&rdquo;</span>
+            <span className="font-semibold text-amber-300">Pesan Partai Besar, Harga Langsung Potong!</span>
             <a 
               href={COMPANY_INFO.whatsapp1}
               target="_blank"
@@ -77,34 +77,34 @@ export const Navbar: React.FC<NavbarProps> = ({
               href="#katalog" 
               className="px-4 py-1.5 text-xs font-semibold rounded-full text-[#032417] hover:bg-white transition-all shadow-xs"
             >
-              Katalog Material
+              Katalog
             </a>
             <button 
               onClick={onOpenProfile}
               className="flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold rounded-full text-[#56685f] hover:text-[#032417] hover:bg-white transition-all"
             >
               <Info className="w-3.5 h-3.5 text-emerald-700" />
-              Tentang PT. IAP
+              Profil PT
             </button>
             <a 
               href="#kalkulator" 
               className="px-4 py-1.5 text-xs font-semibold rounded-full text-[#56685f] hover:text-[#032417] hover:bg-white transition-all"
             >
-              Hitung Ongkir
+              Cek Ongkir
             </a>
             <button 
               onClick={onOpenRadar}
               className="flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold rounded-full text-[#56685f] hover:text-[#032417] hover:bg-white transition-all"
             >
               <Radio className="w-3.5 h-3.5 text-emerald-600 animate-pulse" />
-              Radar Truk GPS
+              Lacak Truk
             </button>
             <button 
               onClick={onOpenBoQ}
               className="flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold rounded-full bg-gradient-to-r from-emerald-700 to-teal-800 text-white shadow-xs hover:opacity-95 transition-all"
             >
               <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-              AI BoQ Parser
+              Hitung RAB
             </button>
           </nav>
 
@@ -119,13 +119,13 @@ export const Navbar: React.FC<NavbarProps> = ({
               title="Konsultasi langsung via WhatsApp"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>Tanya Harga</span>
+              <span>Nego WA</span>
             </a>
 
             {/* B2B Tier Switcher: "Pemesanan Banyak Harga Dikurangi" */}
             <button 
               onClick={onToggleB2B}
-              title="Beralih antara mode Eceran atau Grosir/Borongan"
+              title="Beralih antara Mode Grosir atau Mode Eceran"
               className={`flex items-center gap-2 px-3 py-2 rounded-xl border text-xs font-bold transition-all shadow-xs ${
                 isB2BMode 
                   ? 'bg-[#032417] text-white border-[#032417] shadow-emerald-950/10' 
@@ -133,10 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <span className={`w-2 h-2 rounded-full ${isB2BMode ? 'bg-[#25b967] animate-ping' : 'bg-gray-400'}`} />
-              <span className="hidden xl:inline">
-                {isB2BMode ? 'Harga Grosir (Pesan Banyak)' : 'Harga Eceran Satuan'}
-              </span>
-              <span className="xl:hidden">{isB2BMode ? 'Grosir' : 'Eceran'}</span>
+              <span>{isB2BMode ? 'Mode Grosir' : 'Mode Eceran'}</span>
             </button>
 
             {/* Quick Search Ctrl+K */}

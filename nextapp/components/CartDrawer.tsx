@@ -381,14 +381,14 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 className="w-full py-3 px-4 rounded-xl bg-[#25D366] text-white hover:bg-[#20ba5a] font-black text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 transition-all transform active:scale-95"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Kirim Pesanan Ini Langsung ke WhatsApp</span>
+                <span>Order Langsung via WhatsApp</span>
               </a>
 
               <button
                 onClick={onProceedToInvoice}
                 className="w-full py-3 px-4 rounded-xl bg-[#032417] text-white hover:bg-[#164e33] font-bold text-xs shadow-sm flex items-center justify-center gap-2 transition-all"
               >
-                <span>Terbitkan Proforma Invoice & Faktur Resmi</span>
+                <span>Cetak Invoice Resmi (PDF)</span>
                 <ArrowRight className="w-4 h-4 text-[#25b967]" />
               </button>
             </div>

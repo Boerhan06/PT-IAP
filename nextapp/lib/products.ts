@@ -37,7 +37,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Layers',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Besi tulangan struktur beton mutu tinggi bersertifikasi SNI resmi untuk balok, kolom, dan pondasi bangunan kokoh.'
+    description: 'Toleransi presisi untuk struktur kolom & balok utama. Jaminan lolos uji SNI.'
   },
   {
     id: 'besi-full-sni-12',
@@ -54,7 +54,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Layers',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Besi beton 12mm full SNI untuk tulangan utama gedung bertingkat, ruko, dan infrastruktur jembatan.'
+    description: 'Tulangan utama konstruksi gedung bertingkat, ruko, dan cor beton berat.'
   },
   {
     id: 'besi-full-sni-8',
@@ -71,7 +71,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Layers',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Besi beton 8mm untuk begel/sengkang tiang cor dan tulangan praktis dinding rumah tinggal.'
+    description: 'Ideal untuk begel/sengkang tiang dan tulangan dinding praktis.'
   },
   {
     id: 'besi-6mm-std',
@@ -88,7 +88,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Layers',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Pilihan hemat dan kuat untuk cincin sengkang balok dan pekerjaan pengikat besi beton.'
+    description: 'Solusi hemat dan kuat untuk cincin sengkang balok praktis.'
   },
   {
     id: 'besi-semi-sni-10',
@@ -105,7 +105,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Layers',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Kualitas teruji dengan harga kompetitif untuk optimalisasi anggaran pembangunan.'
+    description: 'Opsi hemat biaya untuk struktur rumah tinggal 1 lantai.'
   },
 
   // --- KATEGORI SEMEN & MORTAR ---
@@ -124,7 +124,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Package',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Semen tipe I berstandar SNI untuk struktur beton bertulang, jembatan, plesteran, dan acian presisi.'
+    description: 'Semen Tipe I standar SNI. Daya rekat kuat untuk cor dan plesteran.'
   },
   {
     id: 'semen-tiga-roda-50kg',
@@ -141,7 +141,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Package',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Kekuatan tekan tinggi, daya lekat kuat, permukaan lebih halus, dan tahan lama terhadap cuaca tropis.'
+    description: 'Kuat tekan tinggi, hasil acian lebih halus dan tahan cuaca ekstrem.'
   },
   {
     id: 'semen-holcim-dynamix-50kg',
@@ -158,7 +158,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Package',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Butiran mikro presisi yang merata, mencegah retak rambut pada plesteran dan cor lantai.'
+    description: 'Formulasi butir mikro, cepat kering dan mencegah retak rambut.'
   },
   {
     id: 'semen-gresik-50kg',
@@ -175,7 +175,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Package',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Semen serbaguna berkualitas tinggi untuk plesteran dinding, pasangan bata, dan cor dak beton.'
+    description: 'Semen serbaguna favorit kontraktor untuk cor dak dan pasangan bata.'
   },
   {
     id: 'semen-rajawali-50kg',
@@ -192,7 +192,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Package',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Solusi hemat biaya proyek perumahan dan renovasi dengan mutu perekat yang tetap terjamin.'
+    description: 'Pilihan paling ekonomis dengan daya rekat tetap terjamin.'
   },
   {
     id: 'mortar-thinbed-40kg',
@@ -209,7 +209,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Package',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Daya rekat tinggi khusus bata ringan hebel, hemat waktu pemasangan dan minim sambungan retak.'
+    description: 'Perekat instan bata ringan/hebel. Cukup tebal 3mm, hemat & cepat.'
   },
 
   // --- KATEGORI PASIR & AGREGAT (PER TRUK BAK KAYU) ---
@@ -228,7 +228,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Truck',
     image: '/images/sand_delivery.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80',
-    description: 'Pasir pasang berbutir halus dan bersih, sangat mudah diaduk, daya rekat plester maksimal dan tidak mudah rontok.'
+    description: 'Muatan 1 truk penuh. Butir halus, bersih, lumpur <3%, plesteran kuat.'
   },
   {
     id: 'pasir-beton-truk',
@@ -245,7 +245,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Truck',
     image: '/images/sand_delivery.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80',
-    description: 'Pasir beton bergradasi kasar dan tajam, sangat ideal untuk campuran cor dak, balok, dan kolom struktur kokoh.'
+    description: 'Butir kasar & tajam. Khusus campuran cor beton mutu tinggi (K-300).'
   },
   {
     id: 'split-cor-truk',
@@ -262,7 +262,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Truck',
     image: '/images/sand_delivery.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80',
-    description: 'Batu split pecah mesin berkualitas bebas abu batu berlebih, menghasilkan beton padat anti keropos.'
+    description: 'Batu pecah mesin 1x2/2x3 bebas abu. Hasil cor padat anti keropos.'
   },
   {
     id: 'batu-belah-truk',
@@ -279,7 +279,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Truck',
     image: '/images/sand_delivery.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80',
-    description: 'Batu belah kali/gunung padat dan keras untuk konstruksi pondasi tapak, retaining wall, dan talud tebing.'
+    description: 'Batu gunung/kali padat untuk pondasi tapak dan dinding penahan tanah.'
   },
 
   // --- KATEGORI BAJA RINGAN, WIREMESH & ATAP ---
@@ -298,7 +298,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Grid',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Kanal C baja ringan galvalum tebal 0.75mm presisi tinggi tahan karat, kuat menahan beban genteng beton/keramik.'
+    description: 'Kanal C galvalum 0.75mm anti karat. Kokoh untuk rangka atap genteng.'
   },
   {
     id: 'wiremesh-m8-lembar',
@@ -315,7 +315,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Grid',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Wiremesh M8 las otomatis untuk tulangan pelat lantai, dak beton, dan jalan paving tahan beban kendaraan berat.'
+    description: 'Jaring baja las otomatis untuk cor pelat lantai, dak, dan jalan beton.'
   },
   {
     id: 'wiremesh-m6-lembar',
@@ -332,7 +332,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Grid',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Pilihan praktis untuk tulangan dak lantai dua rumah tinggal dan lantai kerja gudang.'
+    description: 'Jaring baja las otomatis untuk cor pelat lantai, dak, dan jalan beton.'
   },
   {
     id: 'bondeck-070',
@@ -349,7 +349,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Grid',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Menggantikan triplek bekisting dak lantai, menghemat adukan cor semen dan mempercepat penyelesaian gedung.'
+    description: 'Plat baja pengganti bekisting triplek. Cor lebih hemat dan cepat.'
   },
   {
     id: 'spandeck-zincalume',
@@ -366,7 +366,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Grid',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80',
-    description: 'Atap gelombang spandek modern untuk kanopi carport, atap gudang, pabrik, dan workshop.'
+    description: 'Atap gelombang anti karat untuk gudang, pabrik, dan kanopi.'
   },
 
   // --- KATEGORI BATA, HEBEL, GRANIT & FINISHING ---
@@ -385,7 +385,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Boxes',
     image: '/images/sand_delivery.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Bata merah matang, ukuran presisi, tidak mudah pecah, membuat ruangan lebih adem dan kokoh puluhan tahun.'
+    description: 'Pembakaran kayu matang merata. Padat, presisi, dan tidak mudah patah.'
   },
   {
     id: 'hebel-platinum',
@@ -402,7 +402,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Boxes',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Bata ringan ukuran presisi standar pabrik, pengerjaan dinding lebih cepat 3x lipat dibanding bata konvensional.'
+    description: 'Bata ringan AAC presisi. Pemasangan dinding 3x lebih cepat & kedap suara.'
   },
   {
     id: 'granit-valentino-blanco',
@@ -419,7 +419,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Boxes',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Lantai granit mewah berdaya kilap tinggi nano polished, tahan gores dan noda untuk ruang tamu dan kamar tidur.'
+    description: 'Granit cream polos nano-polished. Mengkilap mewah dan tahan noda.'
   },
   {
     id: 'torn-excel-1300',
@@ -436,7 +436,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Package',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Tangki air kapasitas 1.300 liter dengan 3 lapisan perlindungan anti lumut, higienis untuk air bersih keluarga.'
+    description: 'Tangki air 3 lapis anti lumut & tahan UV. Bergaransi resmi pabrik.'
   },
   {
     id: 'kusen-pintu-kayu',
@@ -453,7 +453,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Boxes',
     image: '/images/cement_depot.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80',
-    description: 'Kusen kayu rapi, siku presisi, siap pasang untuk pintu utama maupun kamar tidur.'
+    description: 'Kayu oven kering anti rayap. Siku presisi, rapi, siap pasang.'
   },
 
   // --- KATEGORI JASA & PERDAGANGAN UMUM (DARI COMPANY PROFILE PT IAP) ---
@@ -472,7 +472,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Wrench',
     image: '/images/readymix_truck.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1579273166152-d725a4e2b755?auto=format&fit=crop&w=600&q=80',
-    description: 'Pengeboran sumur air tanah hingga kedalaman 30-100 meter menggunakan mesin modern, garansi sumber air melimpah dan jernih.',
+    description: 'Bor sumur dalam (30-100m) mesin hidrolik. Garansi air jernih & melimpah.',
     isService: true
   },
   {
@@ -490,7 +490,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Package',
     image: '/images/sand_delivery.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=600&q=80',
-    description: 'Layanan katering konsumsi harian tenaga kerja proyek konstruksi, kantor, dan pabrik dengan menu bergizi dan higienis.',
+    description: 'Nasi box & prasmanan harian untuk pekerja proyek/kantor. Halal & higienis.',
     isService: true
   },
   {
@@ -508,7 +508,7 @@ export const CATALOG_PRODUCTS: Product[] = [
     icon: 'Boxes',
     image: '/images/sand_delivery.jpg',
     fallbackImg: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80',
-    description: 'Penyediaan pupuk berkualitas tinggi untuk perkebunan sayur Lembang dan pertanian tanaman pangan.',
+    description: 'Pupuk resmi Kementan untuk hasil panen sayur & tani maksimal.',
     isService: true
   }
 ];

@@ -24,13 +24,13 @@ export const CategoryTabs: React.FC<CategoryTabsProps> = ({
   categoryCounts
 }) => {
   const categories: { id: ProductCategory; label: string; icon: React.ReactNode }[] = [
-    { id: 'all', label: 'Semua Produk & Jasa', icon: <Boxes className="w-4 h-4" /> },
-    { id: 'besi', label: 'Besi Beton SNI', icon: <Layers className="w-4 h-4" /> },
-    { id: 'semen', label: 'Semen & Mortar', icon: <Package className="w-4 h-4" /> },
-    { id: 'pasir', label: 'Pasir & Agregat (Truk)', icon: <Truck className="w-4 h-4" /> },
-    { id: 'atap', label: 'Baja Ringan, Wiremesh & Atap', icon: <Grid className="w-4 h-4" /> },
-    { id: 'finishing', label: 'Bata, Hebel & Granit 60x60', icon: <Boxes className="w-4 h-4" /> },
-    { id: 'jasa', label: 'Jasa Pengeboran & Lainnya', icon: <Wrench className="w-4 h-4" /> },
+    { id: 'all', label: 'Semua', icon: <Boxes className="w-4 h-4" /> },
+    { id: 'besi', label: 'Besi SNI', icon: <Layers className="w-4 h-4" /> },
+    { id: 'semen', label: 'Semen', icon: <Package className="w-4 h-4" /> },
+    { id: 'pasir', label: 'Pasir & Batu', icon: <Truck className="w-4 h-4" /> },
+    { id: 'atap', label: 'Baja & Atap', icon: <Grid className="w-4 h-4" /> },
+    { id: 'finishing', label: 'Bata & Granit', icon: <Boxes className="w-4 h-4" /> },
+    { id: 'jasa', label: 'Bor Sumur & Jasa', icon: <Wrench className="w-4 h-4" /> },
   ];
 
   return (

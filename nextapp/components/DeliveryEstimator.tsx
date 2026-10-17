@@ -42,10 +42,10 @@ export const DeliveryEstimator: React.FC<DeliveryEstimatorProps> = ({
             <span>Kalkulator Rute & Ongkos Kirim Armada</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black text-[#032417] tracking-tight">
-            Estimasi Biaya Pengiriman Armada PT. IAP
+            Cek Tarif Kirim Armada
           </h2>
           <p className="mt-2 text-sm text-[#56685f] leading-relaxed">
-            Armada dump truck bak kayu, pick-up, dan ekspedisi siap antar material langsung dari depo pusat Lembang ke lokasi proyek Anda di Bandung Raya hingga seluruh Jawa Barat.
+            Pilih lokasi proyek untuk melihat ongkir Dump Truck PT. IAP atau ekspedisi kargo.
           </p>
         </div>
 
@@ -176,7 +176,7 @@ export const DeliveryEstimator: React.FC<DeliveryEstimatorProps> = ({
                   className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#032417] text-white hover:bg-[#164e33] text-xs font-bold shadow-sm transition-all"
                 >
                   <Navigation className="w-4 h-4 text-[#25b967] animate-pulse" />
-                  <span>Pantau Radar Armada GPS Truk Live</span>
+                  <span>Lacak Posisi Truk</span>
                   <ChevronRight className="w-3.5 h-3.5" />
                 </button>
 
@@ -187,7 +187,7 @@ export const DeliveryEstimator: React.FC<DeliveryEstimatorProps> = ({
                   className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-[#25D366] text-white hover:bg-[#20ba5a] text-xs font-bold transition-all shadow-xs"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>Jadwalkan Pengiriman via WhatsApp</span>
+                  <span>Pesan Truk via WA</span>
                 </a>
               </div>
 

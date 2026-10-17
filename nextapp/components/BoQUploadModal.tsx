@@ -117,9 +117,9 @@ export const BoQUploadModal: React.FC<BoQUploadModalProps> = ({
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-base font-bold">AI BoQ / RAB Parser PT. IAP</h3>
+              <h3 className="text-base font-bold">Hitung RAB Otomatis</h3>
               <p className="text-xs text-emerald-200">
-                Unggah dokumen Excel RAB proyek Anda, sistem memetakan kebutuhan material ke katalog harga terbaik PT. IAP.
+                Upload file RAB Excel Anda. Sistem langsung mencocokkan stok & menghitung diskon borongan.
               </p>
             </div>
           </div>
@@ -189,7 +189,7 @@ export const BoQUploadModal: React.FC<BoQUploadModalProps> = ({
                 ) : (
                   <>
                     <Sparkles className="w-4 h-4 text-[#25b967]" />
-                    <span>Mulai Pemetaan Otomatis & Hitung Diskon</span>
+                    <span>Hitung Diskon RAB Sekarang</span>
                   </>
                 )}
               </button>
