@@ -1,0 +1,171 @@
+/* PT Mahakarya Konstruksi - Architectural Design System Stylesheet */
+
+@layer utilities {
+  .backdrop-blur-glass {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(241, 244, 242, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(69, 102, 74, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(3, 36, 23, 0.5);
+}
+
+/* Animations */
+@keyframes pulseSubtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+@keyframes pingRadar {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.radar-ping {
+  animation: pingRadar 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Smooth transitions for Drawer */
+#cart-drawer-overlay {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#cart-drawer-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#cart-drawer-overlay:not(.hidden) {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#cart-drawer-container {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#cart-drawer-overlay.hidden #cart-drawer-container {
+  transform: translateX(100%);
+}
+
+#cart-drawer-overlay:not(.hidden) #cart-drawer-container {
+  transform: translateX(0);
+}
+
+/* Toast Notifications */
+#toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast-item {
+  pointer-events: auto;
+  transform: translateY(20px) scale(0.95);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toast-item.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* Product Card Interactive Accents */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Price Tier Visual States */
+.price-tag-retail.highlighted {
+  color: #032417;
+  font-weight: 700;
+}
+
+.price-tag-b2b.highlighted {
+  background-color: #c7ebd5;
+  border-color: #45664a;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+
+/* Print Styles for Invoice & Faktur Pajak */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #invoice-modal-content, #invoice-modal-content * {
+    visibility: visible;
+  }
+  #invoice-modal-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

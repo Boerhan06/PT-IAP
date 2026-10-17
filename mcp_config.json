@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "pt-iap-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "d:\\Projek\\2026\\PT-IAP"
+      ]
+    },
+    "pt-iap-git": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-git",
+        "--repository",
+        "d:\\Projek\\2026\\PT-IAP"
+      ]
+    },
+    "pt-iap-github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "",
+        "GITHUB_OWNER": "Boerhan06",
+        "GITHUB_REPO": "PT-IAP"
+      }
+    }
+  }
+}
