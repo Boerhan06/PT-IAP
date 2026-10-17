@@ -178,9 +178,9 @@ export const DeliveryEstimator: React.FC<DeliveryEstimatorProps> = ({
               <div className="pt-3 border-t border-[#e5edd9] space-y-2.5">
                 <button
                   onClick={onOpenRadar}
-                  className="w-full flex items-center justify-center gap-2 py-3.5 px-5 rounded-full bg-[#244026] text-white hover:bg-[#1a301c] text-xs font-bold shadow-apple-pill hover:shadow-apple-floating transition-all active:scale-98"
+                  className="w-full flex items-center justify-center gap-2 py-3.5 px-5 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] text-xs font-bold shadow-apple-pill hover:shadow-apple-floating transition-all active:scale-98"
                 >
-                  <Navigation className="w-4 h-4 text-[#8bd879] animate-pulse" />
+                  <Navigation className="w-4 h-4 text-[#a8dc98] animate-pulse" />
                   <span>Lacak Truk GPS</span>
                   <ChevronRight className="w-3.5 h-3.5" />
                 </button>

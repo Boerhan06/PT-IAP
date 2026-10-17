@@ -173,8 +173,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               onClick={handleAdd}
               className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-full text-xs font-bold shadow-apple-pill transition-all transform active:scale-95 ${
                 added
-                  ? 'bg-[#2f542c] text-white'
-                  : 'bg-[#2f542c] text-white hover:bg-[#233f21]'
+                  ? 'bg-[#3f6c34] text-white'
+                  : 'bg-[#3f6c34] text-white hover:bg-[#33592a]'
               }`}
             >
               {added ? (
@@ -184,7 +184,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 </>
               ) : (
                 <>
-                  <ShoppingCart className="w-4 h-4 text-[#83c076]" />
+                  <ShoppingCart className="w-4 h-4 text-[#a8dc98]" />
                   <span>+ Keranjang</span>
                 </>
               )}
@@ -201,10 +201,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               href={`https://wa.me/6285265458819?text=${waMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-[#2f542c] font-bold hover:text-[#1b3319] transition-colors"
+              className="inline-flex items-center gap-1 text-[#3f6c34] font-bold hover:text-[#1b3319] transition-colors"
               title="Beli langsung lewat WhatsApp"
             >
-              <MessageCircle className="w-3.5 h-3.5 text-[#2f542c]" />
+              <MessageCircle className="w-3.5 h-3.5 text-[#3f6c34]" />
               <span>Beli via WA</span>
             </a>
           </div>

@@ -35,7 +35,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#032417" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="https://cdn.tailwindcss.com"></script>
@@ -45,12 +45,16 @@ export default function RootLayout({
               tailwind.config = {
                 theme: {
                   extend: {
+                    fontFamily: {
+                      sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                      heading: ['Inter', 'sans-serif'],
+                    },
                     colors: {
                       forest: {
-                        DEFAULT: '#2b4e28',
-                        hover: '#223f20',
-                        dark: '#1b3319',
-                        light: '#3a6736',
+                        DEFAULT: '#3f6c34',
+                        hover: '#33592a',
+                        dark: '#284621',
+                        light: '#4d833f',
                         subtle: '#eaf2e6',
                       },
                       sage: {

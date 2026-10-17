@@ -278,7 +278,7 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
           <div className="flex items-center gap-2">
             <button
               onClick={handlePrint}
-              className="px-5 py-2.5 rounded-full bg-[#244026] text-white hover:bg-[#1a301c] text-xs font-bold transition-all shadow-apple-pill active:scale-98"
+              className="px-5 py-2.5 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] text-xs font-bold transition-all shadow-apple-pill active:scale-98"
             >
               Unduh Invoice PDF
             </button>

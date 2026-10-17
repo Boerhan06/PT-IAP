@@ -251,7 +251,7 @@ export default function Home() {
         </div>
 
         {/* Catalog Bottom CTA Banner - Apple Pill Card Style */}
-        <div className="p-8 sm:p-10 rounded-[36px] bg-[#244026] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-apple-floating border border-[#385e3a]">
+        <div className="p-8 sm:p-10 rounded-[36px] bg-[#3f6c34] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-apple-floating border border-[#528946]">
           <div className="space-y-2 max-w-xl text-center md:text-left">
             <span className="px-3 py-1 rounded-full text-[10px] font-black bg-[#f5d565] text-[#1b3319] uppercase tracking-wider inline-block">
               Pemesanan Khusus / Proyek
@@ -259,7 +259,7 @@ export default function Home() {
             <h3 className="text-xl sm:text-2xl font-black">
               Punya RAB Proyek Sendiri?
             </h3>
-            <p className="text-xs sm:text-sm text-[#d8ebd2] leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#e5f2e0] leading-relaxed">
               Kirim daftar belanja Anda ke WhatsApp. Dapatkan hitungan diskon borongan dalam 5 menit!
             </p>
           </div>
@@ -268,9 +268,9 @@ export default function Home() {
             href={COMPANY_INFO.whatsapp1}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 flex items-center gap-2.5 px-7 py-4 rounded-full bg-[#83c076] text-[#1b3319] hover:bg-[#97cf8b] text-xs sm:text-sm font-extrabold shadow-apple-pill transition-all transform active:scale-95"
+            className="flex-shrink-0 flex items-center gap-2.5 px-7 py-4 rounded-full bg-white text-[#284621] hover:bg-[#f4f8f2] text-xs sm:text-sm font-extrabold shadow-apple-pill transition-all transform active:scale-95"
           >
-            <MessageCircle className="w-4 h-4" />
+            <MessageCircle className="w-4 h-4 text-[#3f6c34]" />
             <span>Kirim RAB via WA</span>
           </a>
         </div>
@@ -299,8 +299,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#2f542c] transition-all shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-[#2f542c] text-[#a0d995] flex items-center justify-center font-black text-xs shadow-apple-pill">
+            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#3f6c34] transition-all shadow-xs">
+              <div className="w-10 h-10 rounded-full bg-[#3f6c34] text-white flex items-center justify-center font-black text-xs shadow-apple-pill">
                 01
               </div>
               <h4 className="text-sm font-extrabold text-[#1b3319]">Pilih Barang</h4>
@@ -309,8 +309,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#2f542c] transition-all shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-[#2f542c] text-[#a0d995] flex items-center justify-center font-black text-xs shadow-apple-pill">
+            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#3f6c34] transition-all shadow-xs">
+              <div className="w-10 h-10 rounded-full bg-[#3f6c34] text-white flex items-center justify-center font-black text-xs shadow-apple-pill">
                 02
               </div>
               <h4 className="text-sm font-extrabold text-[#1b3319]">Kunci Harga</h4>
@@ -319,8 +319,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#2f542c] transition-all shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-[#2f542c] text-[#a0d995] flex items-center justify-center font-black text-xs shadow-apple-pill">
+            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#3f6c34] transition-all shadow-xs">
+              <div className="w-10 h-10 rounded-full bg-[#3f6c34] text-white flex items-center justify-center font-black text-xs shadow-apple-pill">
                 03
               </div>
               <h4 className="text-sm font-extrabold text-[#1b3319]">Truk Berangkat</h4>
@@ -329,8 +329,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#2f542c] transition-all shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-[#2f542c] text-[#a0d995] flex items-center justify-center font-black text-xs shadow-apple-pill">
+            <div className="bg-[#f8faf6] p-6 rounded-[28px] border border-[#e4ecde] space-y-3 hover:border-[#3f6c34] transition-all shadow-xs">
+              <div className="w-10 h-10 rounded-full bg-[#3f6c34] text-white flex items-center justify-center font-black text-xs shadow-apple-pill">
                 04
               </div>
               <h4 className="text-sm font-extrabold text-[#1b3319]">Cek &amp; Lunas</h4>
@@ -351,12 +351,12 @@ export default function Home() {
           href={COMPANY_INFO.whatsapp1}
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center gap-2.5 px-5 py-3.5 bg-[#2f542c] text-white rounded-full shadow-apple-floating hover:bg-[#233f21] border border-[#426c3d] transition-all transform hover:scale-105 active:scale-95"
+          className="group flex items-center gap-2.5 px-5 py-3.5 bg-[#3f6c34] text-white rounded-full shadow-apple-floating hover:bg-[#33592a] border border-[#528946] transition-all transform hover:scale-105 active:scale-95"
           title="Chat WhatsApp dengan Tim Penjualan PT. IAP"
         >
           <div className="relative">
-            <MessageCircle className="w-5 h-5 text-[#83c076]" />
-            <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#83c076] rounded-full animate-ping" />
+            <MessageCircle className="w-5 h-5 text-[#a8dc98]" />
+            <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#a8dc98] rounded-full animate-ping" />
           </div>
           <div className="hidden sm:flex flex-col text-left pr-1">
             <span className="text-xs font-bold leading-tight">Order / Nego Cepat &bull; Chat Sales Sekarang</span>

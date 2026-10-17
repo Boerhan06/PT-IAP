@@ -63,27 +63,27 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="flex flex-wrap items-center gap-3.5 pt-2">
               <button
                 onClick={onScrollToCatalog}
-                className="flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2f542c] text-white hover:bg-[#233f21] text-xs sm:text-sm font-bold shadow-apple-pill hover:shadow-apple-floating transition-all transform active:scale-95"
+                className="flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] text-xs sm:text-sm font-bold shadow-apple-pill hover:shadow-apple-floating transition-all transform active:scale-95"
               >
                 <span>Cek Harga &amp; Pesan</span>
-                <ArrowRight className="w-4 h-4 text-[#83c076]" />
+                <ArrowRight className="w-4 h-4 text-[#a8dc98]" />
               </button>
 
               <a
                 href={COMPANY_INFO.whatsapp1}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-[#244026] hover:bg-[#f4f7f0] border border-[#d7e5ce] text-xs sm:text-sm font-bold shadow-apple hover:shadow-apple-hover transition-all transform active:scale-95"
+                className="flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-[#284621] hover:bg-[#f4f7f0] border border-[#d7e5ce] text-xs sm:text-sm font-bold shadow-apple hover:shadow-apple-hover transition-all transform active:scale-95"
               >
-                <MessageCircle className="w-4 h-4 text-[#2f542c]" />
+                <MessageCircle className="w-4 h-4 text-[#3f6c34]" />
                 <span>Nego Harga Proyek (WA)</span>
               </a>
 
               <button
                 onClick={onOpenProfile}
-                className="flex items-center gap-2 px-5 py-3.5 rounded-full bg-white/80 text-[#3b5938] hover:bg-white border border-[#e1ebda] text-xs sm:text-sm font-semibold shadow-xs transition-all hover:border-[#2f542c]"
+                className="flex items-center gap-2 px-5 py-3.5 rounded-full bg-white/80 text-[#3f6c34] hover:bg-white border border-[#e1ebda] text-xs sm:text-sm font-semibold shadow-xs transition-all hover:border-[#3f6c34]"
               >
-                <Building2 className="w-4 h-4 text-[#2f542c]" />
+                <Building2 className="w-4 h-4 text-[#3f6c34]" />
                 <span>Profil Resmi PT</span>
               </button>
             </div>
@@ -159,18 +159,18 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
 
               {/* Quick WhatsApp Banner Pill */}
-              <div className="p-4 rounded-2xl bg-[#244026] text-white flex items-center justify-between text-xs shadow-apple-pill">
+              <div className="p-4 rounded-2xl bg-[#3f6c34] text-white flex items-center justify-between text-xs shadow-apple-pill">
                 <div>
                   <span className="font-bold block text-sm">Butuh Dikirim Hari Ini?</span>
-                  <span className="text-[#cde0c2] text-xs">Konfirmasi jadwal truk sekarang.</span>
+                  <span className="text-[#e2f0dc] text-xs">Konfirmasi jadwal truk sekarang.</span>
                 </div>
                 <a
                   href={COMPANY_INFO.whatsapp1}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-full bg-[#83c076] text-[#1b3319] font-extrabold text-xs hover:bg-[#97cf8b] transition-all flex items-center gap-1.5 shadow-sm transform active:scale-95"
+                  className="px-4 py-2 rounded-full bg-white text-[#284621] font-extrabold text-xs hover:bg-[#f4f8f2] transition-all flex items-center gap-1.5 shadow-sm transform active:scale-95"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" />
+                  <MessageCircle className="w-3.5 h-3.5 text-[#3f6c34]" />
                   <span>Chat Admin</span>
                 </a>
               </div>
@@ -186,7 +186,7 @@ export const Hero: React.FC<HeroProps> = ({
             
             {/* Input / Option 1 */}
             <div className="w-full sm:flex-1 bg-white rounded-full px-5 py-2.5 flex items-center gap-2.5 shadow-xs">
-              <Search className="w-4 h-4 text-[#2f542c]" />
+              <Search className="w-4 h-4 text-[#3f6c34]" />
               <input
                 type="text"
                 placeholder="Cari semen, besi full SNI, pasir truk, atau granit..."
@@ -199,8 +199,8 @@ export const Hero: React.FC<HeroProps> = ({
 
             {/* Input / Option 2: Area Proyek */}
             <div className="w-full sm:w-64 bg-white rounded-full px-5 py-2.5 flex items-center gap-2 shadow-xs">
-              <MapPin className="w-4 h-4 text-[#2f542c]" />
-              <span className="text-xs sm:text-sm font-semibold text-[#244026] truncate">
+              <MapPin className="w-4 h-4 text-[#3f6c34]" />
+              <span className="text-xs sm:text-sm font-semibold text-[#284621] truncate">
                 Depo Lembang &bull; Se-Bandung
               </span>
             </div>
@@ -208,10 +208,10 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Action Pill Button */}
             <button
               onClick={onScrollToCatalog}
-              className="w-full sm:w-auto px-7 py-3 rounded-full bg-[#2f542c] text-white hover:bg-[#233f21] font-bold text-xs sm:text-sm shadow-apple-pill transition-all transform active:scale-95 whitespace-nowrap flex items-center justify-center gap-1.5"
+              className="w-full sm:w-auto px-7 py-3 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] font-bold text-xs sm:text-sm shadow-apple-pill transition-all transform active:scale-95 whitespace-nowrap flex items-center justify-center gap-1.5"
             >
               <span>Eksplorasi Katalog</span>
-              <ArrowRight className="w-4 h-4 text-[#83c076]" />
+              <ArrowRight className="w-4 h-4 text-[#a8dc98]" />
             </button>
 
           </div>

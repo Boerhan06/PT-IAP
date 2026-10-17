@@ -386,10 +386,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
               <button
                 onClick={onProceedToInvoice}
-                className="w-full py-3.5 px-5 rounded-full bg-[#244026] text-white hover:bg-[#1a301c] font-bold text-xs shadow-apple-pill flex items-center justify-center gap-2 transition-all active:scale-98"
+                className="w-full py-3.5 px-5 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] font-bold text-xs shadow-apple-pill flex items-center justify-center gap-2 transition-all active:scale-98"
               >
                 <span>Cetak Invoice Resmi (PDF)</span>
-                <ArrowRight className="w-4 h-4 text-[#8bd879]" />
+                <ArrowRight className="w-4 h-4 text-[#a8dc98]" />
               </button>
             </div>
           </div>

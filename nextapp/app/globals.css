@@ -7,9 +7,10 @@
 :root {
   --apple-bg: #f3f6ee;
   --apple-card: #ffffff;
-  --forest: #2b4e28;
-  --forest-hover: #223f20;
-  --forest-dark: #1b3319;
+  --forest: #3f6c34;
+  --forest-hover: #33592a;
+  --forest-dark: #284621;
+  --forest-light: #4d833f;
   --sage: #c2d8b0;
   --sage-light: #e3eed9;
   --sage-subtle: #f4f8f0;
@@ -21,7 +22,7 @@
 body {
   background-color: var(--apple-bg);
   color: var(--text-dark);
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,10 +46,10 @@ body {
 
 /* Brand Organic Colors */
 .bg-apple-canvas { background-color: #f3f6ee; }
-.bg-forest { background-color: #2b4e28; }
-.bg-forest-hover:hover { background-color: #223f20; }
-.text-forest { color: #2b4e28; }
-.border-forest { border-color: #2b4e28; }
+.bg-forest { background-color: #3f6c34; }
+.bg-forest-hover:hover { background-color: #33592a; }
+.text-forest { color: #3f6c34; }
+.border-forest { border-color: #3f6c34; }
 
 .bg-sage { background-color: #c2d8b0; }
 .bg-sage-light { background-color: #e3eed9; }
