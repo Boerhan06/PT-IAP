@@ -21,6 +21,23 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Custom Brand Utilities */
+.bg-primary { background-color: #032417 !important; }
+.text-primary { color: #032417 !important; }
+.border-primary { border-color: #032417 !important; }
+.bg-primary-light { background-color: #0e6e42 !important; }
+.bg-primary-container { background-color: #084d2e !important; }
+.bg-secondary { background-color: #1db954 !important; }
+.text-secondary { color: #1db954 !important; }
+.bg-secondary-container { background-color: #c7ebd5 !important; }
+.bg-accent { background-color: #f5a623 !important; }
+.text-accent { color: #f5a623 !important; }
+.bg-iapred { background-color: #d92525 !important; }
+.text-iapred { color: #d92525 !important; }
+.bg-surface-container { background-color: #eaf1ed !important; }
+.bg-surface-container-low { background-color: #f4f7f5 !important; }
+.bg-surface-container-high { background-color: #dde8e1 !important; }
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

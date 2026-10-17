@@ -37,33 +37,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              tailwind.config = {
-                theme: {
-                  extend: {
-                    colors: {
-                      primary: '#032417',
-                      'primary-light': '#0e6e42',
-                      'primary-container': '#084d2e',
-                      secondary: '#1db954',
-                      'secondary-container': '#c7ebd5',
-                      accent: '#f5a623',
-                      iapred: '#d92525',
-                      surface: '#ffffff',
-                      'surface-container-low': '#f4f7f5',
-                      'surface-container': '#eaf1ed',
-                      'surface-container-high': '#dde8e1',
-                    }
-                  }
-                }
-              }
-            `,
-          }}
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       </head>
       <body className="min-h-screen flex flex-col font-sans antialiased text-[#032417] bg-[#f7faf8]">
         {children}

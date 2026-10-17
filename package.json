@@ -1,0 +1,22 @@
+{
+  "name": "pt-iap-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portal Web & E-Commerce PT IHSAN ABDUL PATAH (PT. IAP) Lembang",
+  "scripts": {
+    "git": "node scripts/git-push.js",
+    "push": "node scripts/git-push.js",
+    "dev": "npm --prefix nextapp run dev",
+    "build": "npm --prefix nextapp run build",
+    "start": "npm --prefix nextapp run start",
+    "lint": "npm --prefix nextapp run lint"
+  },
+  "keywords": [
+    "pt-iap",
+    "ihsan-abdul-patah",
+    "material-bangunan",
+    "lembang"
+  ],
+  "author": "PT IHSAN ABDUL PATAH",
+  "license": "UNLICENSED"
+}
