@@ -109,7 +109,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         onClose();
       }, 1000);
 
-    } catch (err: any) {
+    } catch (err) {
       console.error('Auth error:', err);
       // Fallback grace
       if (onSuccess) {
@@ -256,7 +256,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                       <button
                         type="button"
                         key={item.id}
-                        onClick={() => setRole(item.id as any)}
+                        onClick={() => setRole(item.id as 'kontraktor' | 'mandor' | 'pemilik')}
                         className={`py-2 px-2 rounded-full border text-[11px] font-bold text-center transition-all ${
                           role === item.id
                             ? 'bg-[#3f6c34] text-white border-[#3f6c34] shadow-apple-pill'

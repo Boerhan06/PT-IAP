@@ -17,7 +17,7 @@ import {
 interface ProductCardProps {
   product: Product;
   isB2BMode: boolean;
-  onAddToCart: (product: Product, quantity: number) => void;
+  onAddToCart: (productId: string, qty: number) => void;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
@@ -38,7 +38,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   };
 
   const handleAdd = () => {
-    onAddToCart(product, qty);
+    onAddToCart(product.id, qty);
     setAdded(true);
     setTimeout(() => setAdded(false), 1400);
   };

@@ -97,7 +97,7 @@ export default function Home() {
 
   const handleImportBoQItems = (items: { productId: string; qty: number }[]) => {
     setCart(prev => {
-      let updated = [...prev];
+      const updated = [...prev];
       items.forEach(newItem => {
         const foundIndex = updated.findIndex(i => i.productId === newItem.productId);
         if (foundIndex > -1) {
