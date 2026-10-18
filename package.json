@@ -4,6 +4,7 @@
   "private": true,
   "description": "Portal Web & E-Commerce PT IHSAN ABDUL PATAH (PT. IAP) Lembang",
   "scripts": {
+    "deploy": "node scripts/git-push.js",
     "git": "node scripts/git-push.js",
     "push": "node scripts/git-push.js",
     "dev": "npm --prefix nextapp run dev",

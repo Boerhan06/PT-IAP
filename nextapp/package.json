@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "deploy": "node ../scripts/git-push.js",
     "git": "node ../scripts/git-push.js",
     "push": "node ../scripts/git-push.js"
   },

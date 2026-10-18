@@ -20,7 +20,7 @@ export const IAPLogo: React.FC<IAPLogoProps> = ({
   const red = monochrome ? '#032417' : '#d92525';
 
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
+    <div className={`flex items-center gap-2 sm:gap-3 ${className}`}>
       {/* Precision SVG Vector of PT IAP Monogram */}
       <svg
         width={size}
@@ -54,13 +54,13 @@ export const IAPLogo: React.FC<IAPLogoProps> = ({
       </svg>
 
       {showText && (
-        <div className="flex flex-col">
+        <div className="flex flex-col min-w-0">
           <div className="flex items-center gap-1.5">
-            <span className="font-black text-lg tracking-tight text-[#032417]">
+            <span className="font-black text-base sm:text-lg tracking-tight text-[#032417] whitespace-nowrap leading-tight">
               PT. IAP
             </span>
           </div>
-          <span className="text-[11px] font-extrabold tracking-wider text-[#56685f] uppercase -mt-0.5">
+          <span className="hidden sm:block text-[10px] md:text-[11px] font-extrabold tracking-wider text-[#56685f] uppercase -mt-0.5 whitespace-nowrap">
             PT IHSAN ABDUL PATAH
           </span>
         </div>

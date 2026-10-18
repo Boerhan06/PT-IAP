@@ -21,7 +21,7 @@ function run(command, silent = false) {
 
 async function main() {
   console.log('\n\x1b[36m==============================================================\x1b[0m');
-  console.log('\x1b[32m  PT IHSAN ABDUL PATAH (PT. IAP) — Fast Git Terminal Push     \x1b[0m');
+  console.log('\x1b[32m  PT IHSAN ABDUL PATAH (PT. IAP) — Fast Push & Deploy Vercel  \x1b[0m');
   console.log('\x1b[33m  Target: https://github.com/Boerhan06/PT-IAP.git             \x1b[0m');
   console.log('\x1b[36m==============================================================\x1b[0m\n');
 

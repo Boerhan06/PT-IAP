@@ -45,26 +45,26 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-7 space-y-6">
             
             {/* Tagline Badge - Apple Pill Style */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e3eed9] border border-[#cde0c2] text-[#244026] text-xs font-bold shadow-apple-pill">
-              <Sparkles className="w-3.5 h-3.5 text-[#2f542c]" />
-              <span>PT IHSAN ABDUL PATAH • Distributor Resmi SNI</span>
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-[#e3eed9] border border-[#cde0c2] text-[#244026] text-[11px] sm:text-xs font-bold shadow-apple-pill max-w-full">
+              <Sparkles className="w-3.5 h-3.5 text-[#2f542c] shrink-0" />
+              <span className="truncate">PT IHSAN ABDUL PATAH • Distributor Resmi SNI</span>
             </div>
 
             {/* Core Persuasive Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1b3319] tracking-tight leading-[1.18]">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-[#1b3319] tracking-tight leading-[1.2]">
               Pusat Material SNI &amp; Bor Sumur. Harga Pabrik, Siap Antar.
             </h1>
 
             {/* Sub-headline / Elevator Pitch */}
-            <p className="text-base sm:text-lg text-[#536b51] leading-relaxed max-w-2xl font-medium">
+            <p className="text-sm sm:text-lg text-[#536b51] leading-relaxed max-w-2xl font-medium">
               Sedia Besi Beton, Semen, Pasir Truk, hingga Jasa Sumur Bor. Beli eceran murah, beli borongan langsung potong harga!
             </p>
 
             {/* Action Call to Action Buttons - Apple Pill Style */}
-            <div className="flex flex-wrap items-center gap-3.5 pt-2">
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3.5 pt-2">
               <button
                 onClick={onScrollToCatalog}
-                className="flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] text-xs sm:text-sm font-bold shadow-apple-pill hover:shadow-apple-floating transition-all transform active:scale-95"
+                className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] text-xs sm:text-sm font-bold shadow-apple-pill hover:shadow-apple-floating transition-all transform active:scale-95 cursor-pointer"
               >
                 <span>Cek Harga &amp; Pesan</span>
                 <ArrowRight className="w-4 h-4 text-[#a8dc98]" />
@@ -74,7 +74,7 @@ export const Hero: React.FC<HeroProps> = ({
                 href={COMPANY_INFO.whatsapp1}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-[#284621] hover:bg-[#f4f7f0] border border-[#d7e5ce] text-xs sm:text-sm font-bold shadow-apple hover:shadow-apple-hover transition-all transform active:scale-95"
+                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-white text-[#284621] hover:bg-[#f4f7f0] border border-[#d7e5ce] text-xs sm:text-sm font-bold shadow-apple hover:shadow-apple-hover transition-all transform active:scale-95"
               >
                 <MessageCircle className="w-4 h-4 text-[#3f6c34]" />
                 <span>Nego Harga Proyek (WA)</span>
@@ -82,7 +82,7 @@ export const Hero: React.FC<HeroProps> = ({
 
               <button
                 onClick={onOpenProfile}
-                className="flex items-center gap-2 px-5 py-3.5 rounded-full bg-white/80 text-[#3f6c34] hover:bg-white border border-[#e1ebda] text-xs sm:text-sm font-semibold shadow-xs transition-all hover:border-[#3f6c34]"
+                className="flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-white/80 text-[#3f6c34] hover:bg-white border border-[#e1ebda] text-xs sm:text-sm font-semibold shadow-xs transition-all hover:border-[#3f6c34] cursor-pointer"
               >
                 <Building2 className="w-4 h-4 text-[#3f6c34]" />
                 <span>Profil Resmi PT</span>
@@ -90,17 +90,17 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             {/* Trust Pillars */}
-            <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-semibold text-[#244026]">
-              <div className="flex items-center gap-1.5 bg-white px-3.5 py-2 rounded-full border border-[#e1ebda] shadow-xs">
-                <CheckCircle2 className="w-4 h-4 text-[#2f542c]" />
+            <div className="pt-2 flex flex-wrap items-center gap-2 sm:gap-3 text-[11px] sm:text-xs font-semibold text-[#244026]">
+              <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full border border-[#e1ebda] shadow-xs">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#2f542c]" />
                 <span>Jaminan Full SNI</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-white px-3.5 py-2 rounded-full border border-[#e1ebda] shadow-xs">
-                <CheckCircle2 className="w-4 h-4 text-[#2f542c]" />
+              <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full border border-[#e1ebda] shadow-xs">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#2f542c]" />
                 <span>Armada Truk Sendiri</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-white px-3.5 py-2 rounded-full border border-[#e1ebda] shadow-xs">
-                <CheckCircle2 className="w-4 h-4 text-[#2f542c]" />
+              <div className="flex items-center gap-1.5 bg-white px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full border border-[#e1ebda] shadow-xs">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#2f542c]" />
                 <span>Bisa COD di Proyek</span>
               </div>
             </div>
@@ -114,9 +114,9 @@ export const Hero: React.FC<HeroProps> = ({
 
         </div>
 
-        {/* Floating Quick Procurement & Search Bar (Full Width matching Hero Card) */}
+        {/* Floating Quick Procurement & Search Bar */}
         <div className="pt-2 w-full">
-          <div className="bg-[#c2d8b0] rounded-full p-2.5 sm:p-3 shadow-apple-floating border border-[#b2cc9f] flex flex-col sm:flex-row items-center gap-2.5 w-full">
+          <div className="bg-[#c2d8b0] rounded-[24px] sm:rounded-full p-2 sm:p-3 shadow-apple-floating border border-[#b2cc9f] flex flex-col sm:flex-row items-center gap-2 sm:gap-2.5 w-full">
             
             {/* Input / Option 1: Search Material */}
             <div className="w-full sm:flex-1 bg-white rounded-full px-5 py-3 flex items-center gap-2.5 shadow-xs">
