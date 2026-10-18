@@ -114,13 +114,13 @@ export const Hero: React.FC<HeroProps> = ({
 
         </div>
 
-        {/* Floating Quick Procurement & Search Bar (Inspired by the Reference Image) */}
-        <div className="pt-2">
-          <div className="bg-[#c2d8b0] rounded-full p-2.5 sm:p-3 shadow-apple-floating border border-[#b2cc9f] flex flex-col sm:flex-row items-center gap-2 max-w-4xl mx-auto">
+        {/* Floating Quick Procurement & Search Bar (Full Width matching Hero Card) */}
+        <div className="pt-2 w-full">
+          <div className="bg-[#c2d8b0] rounded-full p-2.5 sm:p-3 shadow-apple-floating border border-[#b2cc9f] flex flex-col sm:flex-row items-center gap-2.5 w-full">
             
-            {/* Input / Option 1 */}
-            <div className="w-full sm:flex-1 bg-white rounded-full px-5 py-2.5 flex items-center gap-2.5 shadow-xs">
-              <Search className="w-4 h-4 text-[#3f6c34]" />
+            {/* Input / Option 1: Search Material */}
+            <div className="w-full sm:flex-1 bg-white rounded-full px-5 py-3 flex items-center gap-2.5 shadow-xs">
+              <Search className="w-4 h-4 text-[#3f6c34] shrink-0" />
               <input
                 type="text"
                 placeholder="Cari semen, besi full SNI, pasir truk, atau granit..."
@@ -131,10 +131,10 @@ export const Hero: React.FC<HeroProps> = ({
               />
             </div>
 
-            {/* Input / Option 2: Area Proyek */}
-            <div className="w-full sm:w-64 bg-white rounded-full px-5 py-2.5 flex items-center gap-2 shadow-xs">
-              <MapPin className="w-4 h-4 text-[#3f6c34]" />
-              <span className="text-xs sm:text-sm font-semibold text-[#284621] truncate">
+            {/* Input / Option 2: Area Proyek Depo */}
+            <div className="w-full sm:w-auto sm:min-w-[240px] bg-white rounded-full px-5 py-3 flex items-center gap-2 shadow-xs shrink-0">
+              <MapPin className="w-4 h-4 text-[#3f6c34] shrink-0" />
+              <span className="text-xs sm:text-sm font-semibold text-[#284621] whitespace-nowrap">
                 Depo Lembang &bull; Se-Bandung
               </span>
             </div>
@@ -142,7 +142,7 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Action Pill Button */}
             <button
               onClick={onScrollToCatalog}
-              className="w-full sm:w-auto px-7 py-3 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] font-bold text-xs sm:text-sm shadow-apple-pill transition-all transform active:scale-95 whitespace-nowrap flex items-center justify-center gap-1.5"
+              className="w-full sm:w-auto px-7 py-3 rounded-full bg-[#3f6c34] text-white hover:bg-[#33592a] font-bold text-xs sm:text-sm shadow-apple-pill transition-all transform active:scale-95 whitespace-nowrap flex items-center justify-center gap-1.5 shrink-0"
             >
               <span>Eksplorasi Katalog</span>
               <ArrowRight className="w-4 h-4 text-[#a8dc98]" />

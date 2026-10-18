@@ -77,3 +77,17 @@ body {
 * {
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* Slider Progress Animation */
+@keyframes heroSliderProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-slider-progress {
+  animation: heroSliderProgress 4.5s linear forwards;
+}
